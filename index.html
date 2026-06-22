@@ -931,7 +931,7 @@ function showA(sec){
       if(hasShop){
         S.role='owner';
         enterApp('admin');
-        try{var _st=localStorage.getItem('manipro_tab');if(_st)setTimeout(function(){showA(_st);},100);}catch(e){}
+        try{var _st=localStorage.getItem('manipro_tab');if(_st)setTimeout(function(){showA(_st);},500);}catch(e){}
         if(typeof updateLoggedName==='function')updateLoggedName(session.user.email);
       } else {
         var _bur=await db.from('barber_users').select('*').eq('user_id',uid);

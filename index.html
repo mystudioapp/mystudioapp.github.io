@@ -125,7 +125,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--dk);color:var(--tx);min-h
 .srl{font-size:13px;color:var(--txm)}.srv{font-size:14px;font-weight:600}
 ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--dk4);border-radius:4px}
 html,body{overscroll-behavior-y:none;}
-#svc-grid img{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;pointer-events:auto;}
+#svc-grid img{-webkit-touch-callout:none!important;-webkit-user-select:none!important;user-select:none!important;-webkit-user-drag:none!important;pointer-events:auto;}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 </head>
@@ -2794,21 +2794,33 @@ document.addEventListener('contextmenu', function(e) {
 // === LONG PRESS on service images to open lightbox ===
 (function(){
   var _lpTimer=null;
-  var _lpTarget=null;
+  var _lpImg=null;
+  var _moved=false;
+  
   document.addEventListener('touchstart',function(e){
     var img=e.target;
     if(img.tagName==='IMG'&&img.closest('#svc-grid')&&img.src){
-      e.preventDefault();
-      _lpTarget=img;
+      _lpImg=img;
+      _moved=false;
       _lpTimer=setTimeout(function(){
-        openImgLightbox(_lpTarget.src);
-        _lpTarget=null;
-      },400);
+        if(!_moved&&_lpImg){
+          openImgLightbox(_lpImg.src);
+        }
+        _lpImg=null;
+      },500);
     }
-  });
-  document.addEventListener('touchend',function(){if(_lpTimer){clearTimeout(_lpTimer);_lpTimer=null;}},{passive:true});
-  document.addEventListener('touchmove',function(){if(_lpTimer){clearTimeout(_lpTimer);_lpTimer=null;}},{passive:true});
-  })();
+  },{passive:false});
+  
+  document.addEventListener('touchmove',function(){
+    _moved=true;
+    if(_lpTimer){clearTimeout(_lpTimer);_lpTimer=null;}
+  },{passive:true});
+  
+  document.addEventListener('touchend',function(e){
+    if(_lpTimer){clearTimeout(_lpTimer);_lpTimer=null;}
+    _lpImg=null;
+  },{passive:true});
+})();
 
 function openImgLightbox(url){
   var ov=document.getElementById('img-lightbox');

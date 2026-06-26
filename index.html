@@ -1080,19 +1080,36 @@ function renderSvcGrid(){
       <div style="font-size:14px;font-weight:600;color:var(--tx)">${s.name}</div>
       <div style="font-size:16px;font-weight:700;color:var(--gold);margin-top:4px">${fmt(s.price)}</div>
       <div style="font-size:11px;color:var(--txm);margin-top:2px">${s.duration_minutes} min</div>
-      ${inCart?'<div style="font-size:11px;color:var(--gold);font-weight:700;margin-top:6px">✓ Adicionado</div>':''}
+      ${inCart?'<div class="svc-added" style="font-size:11px;color:var(--gold);font-weight:700;margin-top:6px">✓ Adicionado</div>':''}
     </div>`;
   }).join('');
 }
 
 function toggleCart(idx){
   if(window._skipToggle){window._skipToggle=false;return;}
-  // idx é o índice do array S.svcs
   const svc=S.svcs[idx];if(!svc)return;
-  const svcWithIdx={...svc,_idx:idx};
-  const cartIdx=S.cart.findIndex(c=>c._idx===idx);
-  if(cartIdx>=0)S.cart.splice(cartIdx,1);else S.cart.push(svcWithIdx);
-  renderSvcGrid();renderCart();
+  const existIdx=S.cart.findIndex(c=>(c.id&&c.id===svc.id)||(c._idx===idx));
+  if(existIdx>-1){S.cart.splice(existIdx,1);}else{S.cart.push({...svc,_idx:idx});}
+  // Update visual state of the card without re-rendering
+  const cards=document.querySelectorAll('#svc-grid > div');
+  const card=cards[idx];
+  if(card){
+    const inCart=S.cart.some(c=>(c.id&&c.id===svc.id)||(c._idx===idx));
+    card.style.borderColor=inCart?'var(--gold)':'var(--dk4)';
+    card.style.background=inCart?'rgba(155,89,182,.08)':'var(--dk3)';
+    let addedEl=card.querySelector('.svc-added');
+    if(inCart&&!addedEl){
+      addedEl=document.createElement('div');
+      addedEl.className='svc-added';
+      addedEl.style.cssText='font-size:11px;color:var(--gold);font-weight:700;margin-top:6px';
+      addedEl.textContent='\u2713 Adicionado';
+      card.appendChild(addedEl);
+    }else if(!inCart&&addedEl){
+      addedEl.remove();
+    }
+  }
+  // Update cart summary
+  renderCart();
   const btn=document.getElementById('btn-bk1');
   if(btn){btn.disabled=S.cart.length===0;btn.style.opacity=S.cart.length>0?'1':'.4';}
 }

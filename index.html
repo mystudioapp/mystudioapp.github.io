@@ -772,7 +772,9 @@ html,body{overscroll-behavior-y:none;}
       <div class="fg"><label class="fl">Preco (R$)</label><input class="fi" id="pm-price" type="text" inputmode="decimal" placeholder="0"></div>
       <div class="fg"><label class="fl">Preco original</label><input class="fi" id="pm-orig" type="text" inputmode="decimal" placeholder="0"></div>
     </div>
-    <div class="fg"><label class="fl">Itens incluidos (um por linha)</label><textarea class="fi" id="pm-items" rows="3" style="resize:none" placeholder="Ex: 2 manicures + 1 pedicure"></textarea></div>
+    <div class="fg"><label class="fl">Itens incluidos (um por linha)</label><textarea class="fi" id="pm-items" rows="3" style="resize:none" placeholder="1 manicure
+1 pedicure
+1 esmaltacao"></textarea></div>
     <div class="fg"><label class="fl">Badge</label><select class="fi" id="pm-badge"><option value="">Sem badge</option><option value="POPULAR">POPULAR</option><option value="OFERTA">OFERTA</option><option value="NOVO">NOVO</option></select></div>
     <input type="hidden" id="pm-id">
     <button class="btn btn-gold" onclick="savePkg()" style="margin-bottom:10px">Salvar pacote</button>
@@ -1200,7 +1202,7 @@ async function loadPkgs(){
       <div class="pkg${p.badge?'  best':''}" onclick="_pkgClick(this)" data-pid="${p.id}">
         <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;margin-bottom:10px">${p.name}</div>
         <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:12px">
-          ${(Array.isArray(p.items)?p.items:(p.items||"").split("\n").filter(x=>x.trim())).map(i=>`<div style="font-size:12px;color:var(--txm);display:flex;gap:6px;align-items:center"><span style="color:var(--grn);font-weight:700">✓</span>${i}</div>`).join('')}
+          ${(Array.isArray(p.items)?p.items:((p.items||"").match(/^\d+$/)?[p.description||""]:(p.items||"").split("\n").filter(x=>x.trim()))).map(i=>`<div style="font-size:12px;color:var(--txm);display:flex;gap:6px;align-items:center"><span style="color:var(--grn);font-weight:700">✓</span>${i}</div>`).join('')}
         </div>
         <div style="display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid var(--dk4)">
           <div>

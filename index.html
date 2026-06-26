@@ -2777,6 +2777,23 @@ document.addEventListener('click', function(e){
     const pp=document.getElementById('pm-img-preview');if(pp){pp.style.display='none';pp.src='';}
   }
 });
+
+// === LIGHTBOX - expandir foto ao tocar ===
+function openImgLightbox(url){
+  var ov=document.getElementById('img-lightbox');
+  if(!ov){
+    ov=document.createElement('div');
+    ov.id='img-lightbox';
+    ov.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;cursor:pointer;opacity:0;transition:opacity .3s';
+    ov.onclick=function(){ov.style.opacity='0';setTimeout(function(){ov.style.display='none'},300)};
+    ov.innerHTML='<img id="img-lightbox-src" style="max-width:90%;max-height:90%;border-radius:12px;object-fit:contain;box-shadow:0 8px 40px rgba(0,0,0,.5)">';
+    document.body.appendChild(ov);
+  }
+  document.getElementById('img-lightbox-src').src=url;
+  ov.style.display='flex';
+  setTimeout(function(){ov.style.opacity='1'},10);
+}
+
 </script>
 </body>
 </html>

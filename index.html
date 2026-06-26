@@ -1076,7 +1076,7 @@ function renderSvcGrid(){
     const key=s.id||('idx-'+i);
     const inCart=S.cart.some(c=>(c.id&&c.id===s.id)||(c._idx===i));
     return`<div onclick="toggleCart(${i})" style="background:var(--dk3);border:1.5px solid ${inCart?'var(--gold)':'var(--dk4)'};border-radius:var(--r);padding:14px;cursor:pointer;transition:all .2s;${inCart?'background:rgba(155,89,182,.08)':''}">
-      ${s.image_url?'<img src="'+s.image_url+'" onclick="event.stopPropagation();openImgLightbox(this.src)" style="width:60px;height:60px;object-fit:cover;border-radius:10px;margin-bottom:8px;cursor:zoom-in">':'<div class="'+catCls(s.category)+'" style="margin-bottom:8px">'+icLabel(s.category)+'</div>'}
+      ${s.image_url?'<img src="'+s.image_url+'" data-lightbox="1" style="width:60px;height:60px;object-fit:cover;border-radius:10px;margin-bottom:8px;cursor:zoom-in">':'<div class="'+catCls(s.category)+'" style="margin-bottom:8px">'+icLabel(s.category)+'</div>'}
       <div style="font-size:14px;font-weight:600;color:var(--tx)">${s.name}</div>
       <div style="font-size:16px;font-weight:700;color:var(--gold);margin-top:4px">${fmt(s.price)}</div>
       <div style="font-size:11px;color:var(--txm);margin-top:2px">${s.duration_minutes} min</div>
@@ -2779,6 +2779,16 @@ document.addEventListener('click', function(e){
 });
 
 // === LIGHTBOX - expandir foto ao tocar ===
+
+// Global listener for lightbox images
+document.addEventListener('click', function(e) {
+  if (e.target && e.target.getAttribute && e.target.getAttribute('data-lightbox') === '1') {
+    e.stopPropagation();
+    e.preventDefault();
+    openImgLightbox(e.target.src);
+  }
+}, true); // useCapture=true to intercept before card onclick
+
 function openImgLightbox(url){
   var ov=document.getElementById('img-lightbox');
   if(!ov){

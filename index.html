@@ -1076,7 +1076,7 @@ function renderSvcGrid(){
     const key=s.id||('idx-'+i);
     const inCart=S.cart.some(c=>(c.id&&c.id===s.id)||(c._idx===i));
     return`<div onclick="toggleCart(${i})" style="background:var(--dk3);border:1.5px solid ${inCart?'var(--gold)':'var(--dk4)'};border-radius:var(--r);padding:14px;cursor:pointer;transition:all .2s;${inCart?'background:rgba(155,89,182,.08)':''}">
-      ${s.image_url?'<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><img src="'+s.image_url+'" style="width:60px;height:60px;object-fit:cover;border-radius:10px"><div class="ver-foto-btn" style="font-size:11px;color:#9B59B6;font-weight:600;padding:6px 10px;border:1px solid #9B59B6;border-radius:8px;cursor:pointer;white-space:nowrap">&#x1F50D; Ampliar</div></div>':'<div class="'+catCls(s.category)+'" style="margin-bottom:8px">'+icLabel(s.category)+'</div>'}
+      ${s.image_url?'<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><img src="'+s.image_url+'" style="width:60px;height:60px;object-fit:cover;border-radius:10px"><div class="ver-foto-btn" ontouchstart="window._skipToggle=true;openImgLightbox(this.previousElementSibling.src)" onmousedown="window._skipToggle=true;openImgLightbox(this.previousElementSibling.src)" style="font-size:12px;color:#9B59B6;font-weight:600;padding:8px 14px;border:1.5px solid #9B59B6;border-radius:8px;cursor:pointer;white-space:nowrap;-webkit-tap-highlight-color:transparent">&#x1F50D; Ampliar</div></div>':'<div class="'+catCls(s.category)+'" style="margin-bottom:8px">'+icLabel(s.category)+'</div>'}
       <div style="font-size:14px;font-weight:600;color:var(--tx)">${s.name}</div>
       <div style="font-size:16px;font-weight:700;color:var(--gold);margin-top:4px">${fmt(s.price)}</div>
       <div style="font-size:11px;color:var(--txm);margin-top:2px">${s.duration_minutes} min</div>
@@ -2788,15 +2788,6 @@ document.addEventListener('click', function(e){
 
 
 
-// Click delegation for ver foto button
-document.addEventListener('click', function(e) {
-  var btn = e.target.closest('.ver-foto-btn');
-  if (btn) {
-    window._skipToggle = true;
-    var img = btn.parentElement.querySelector('img');
-    if (img && img.src) openImgLightbox(img.src);
-  }
-}, true);
 
 function openImgLightbox(url){
   var ov=document.getElementById('img-lightbox');

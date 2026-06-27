@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -28,7 +28,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--dk);color:var(--tx);min-h
 .fl{font-size:11px;font-weight:700;color:var(--txm);letter-spacing:.5px;text-transform:uppercase;margin-bottom:6px;display:block}
 .fi{width:100%;background:var(--dk3);border:1px solid var(--dk4);border-radius:var(--rs);padding:13px 14px;color:var(--tx);font-family:'DM Sans',sans-serif;font-size:15px;outline:none;transition:border-color .2s}
 .fi:focus{border-color:var(--gold)}
-/* SERVICE ICON BADGES — no emoji, 100% reliable */
+/* SERVICE ICON BADGES Ã¢â‚¬â€ no emoji, 100% reliable */
 .sic{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex-shrink:0;color:#fff;letter-spacing:0}
 .sic-C{background:linear-gradient(135deg,#8B6914,#9B59B6)}
 .sic-B{background:linear-gradient(135deg,#1a4a6b,#2980b9)}
@@ -146,59 +146,59 @@ html,body{overscroll-behavior-y:none;}
 <!-- ADMIN LOGIN -->
 <div id="adm-login" class="screen">
   <div class="lbox">
-    <div class="llogo">💅 ManiPro</div>
+    <div class="llogo">Ã°Å¸â€™â€¦ ManiPro</div>
     <div class="lsub">Painel Admin</div>
     <div class="errbox" id="lerr"></div>
     <div class="fg"><label class="fl">E-mail</label><input class="fi" type="email" id="lemail" placeholder="seu@email.com" autocomplete="email"></div>
-    <div class="fg"><label class="fl">Senha</label><input class="fi" type="password" id="lpwd" placeholder="••••••••" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()"></div>
+    <div class="fg"><label class="fl">Senha</label><input class="fi" type="password" id="lpwd" placeholder="Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()"></div>
     <button class="btn btn-gold" id="btnlogin" onclick="doLogin()">Entrar</button>
     <button class="btn btn-out" onclick="enterApp('splash')">Voltar</button>
     <p style="text-align:center;font-size:11px;color:var(--txm);margin-top:16px">
       <span style="color:var(--gold);cursor:pointer" onclick="doForgot()">Esqueci minha senha</span>
     </p>
     <p style="text-align:center;font-size:11px;color:var(--txm);margin-top:10px">
-      Nao tem conta? <span style="color:var(--gold);cursor:pointer" onclick="enterApp('planos')">Ver planos →</span>
+      Nao tem conta? <span style="color:var(--gold);cursor:pointer" onclick="enterApp('planos')">Ver planos Ã¢â€ â€™</span>
     </p>
   </div>
 </div>
 
 <!-- PLANOS / HOTMART -->
-<!-- CRIAR SENHA — primeiro acesso via link do email -->
+<!-- CRIAR SENHA Ã¢â‚¬â€ primeiro acesso via link do email -->
 <div id="set-password" class="screen">
   <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;padding:40px 24px">
     <div style="width:100%;max-width:380px">
-      <div style="font-family:'Playfair Display',serif;font-size:36px;font-weight:900;color:var(--gold);text-align:center">💅 ManiPro</div>
+      <div style="font-family:'Playfair Display',serif;font-size:36px;font-weight:900;color:var(--gold);text-align:center">Ã°Å¸â€™â€¦ ManiPro</div>
       <div style="font-size:11px;color:var(--txm);text-align:center;letter-spacing:3px;text-transform:uppercase;margin:4px 0 32px">Primeiro Acesso</div>
       <div style="background:rgba(155,89,182,.1);border:1px solid rgba(155,89,182,.3);border-radius:var(--r);padding:14px;margin-bottom:24px;font-size:13px;color:var(--gold);line-height:1.6;text-align:center">
-        🎉 Bem-vindo ao ManiPro!<br>Crie sua senha para continuar.
+        Ã°Å¸Å½â€° Bem-vindo ao ManiPro!<br>Crie sua senha para continuar.
       </div>
       <div class="errbox" id="sp-err"></div>
-      <div class="fg"><label class="fl">Nova senha</label><input class="fi" type="password" id="sp-pwd" placeholder="Mínimo 8 caracteres"></div>
+      <div class="fg"><label class="fl">Nova senha</label><input class="fi" type="password" id="sp-pwd" placeholder="MÃƒÂ­nimo 8 caracteres"></div>
       <div class="fg"><label class="fl">Confirmar senha</label><input class="fi" type="password" id="sp-pwd2" placeholder="Repita a senha" onkeydown="if(event.key==='Enter')setNewPassword()"></div>
-      <button class="btn btn-gold" id="btn-sp" onclick="setNewPassword()">Criar senha e entrar →</button>
+      <button class="btn btn-gold" id="btn-sp" onclick="setNewPassword()">Criar senha e entrar Ã¢â€ â€™</button>
     </div>
   </div>
 </div>
 
-<!-- ONBOARDING — tela de configuração inicial para novos assinantes -->
+<!-- ONBOARDING Ã¢â‚¬â€ tela de configuraÃƒÂ§ÃƒÂ£o inicial para novos assinantes -->
 <div id="onboarding" class="screen">
   <div style="display:flex;flex-direction:column;align-items:center;padding:40px 24px;overflow-y:auto;flex:1;max-width:480px;margin:0 auto;width:100%">
-    <div style="font-family:'Playfair Display',serif;font-size:32px;font-weight:900;color:var(--gold);text-align:center;margin-bottom:4px">💅 ManiPro</div>
-    <div style="font-size:13px;color:var(--txm);text-align:center;margin-bottom:32px">Vamos configurar sua salão!</div>
+    <div style="font-family:'Playfair Display',serif;font-size:32px;font-weight:900;color:var(--gold);text-align:center;margin-bottom:4px">Ã°Å¸â€™â€¦ ManiPro</div>
+    <div style="font-size:13px;color:var(--txm);text-align:center;margin-bottom:32px">Vamos configurar sua salÃƒÂ£o!</div>
     <div style="width:100%">
       <div style="background:rgba(155,89,182,.1);border:1px solid rgba(155,89,182,.3);border-radius:var(--r);padding:14px;margin-bottom:24px;font-size:13px;color:var(--gold);line-height:1.6">
-        👋 Bem-vindo ao ManiPro! Preencha os dados abaixo para criar sua área exclusiva. Isso leva menos de 2 minutos.
+        Ã°Å¸â€˜â€¹ Bem-vindo ao ManiPro! Preencha os dados abaixo para criar sua ÃƒÂ¡rea exclusiva. Isso leva menos de 2 minutos.
       </div>
-      <div class="fg"><label class="fl">Nome da sua salão *</label><input class="fi" id="ob-name" placeholder="Ex: Salão do João" oninput="autoSlug(this)"></div>
+      <div class="fg"><label class="fl">Nome da sua salÃƒÂ£o *</label><input class="fi" id="ob-name" placeholder="Ex: SalÃƒÂ£o do JoÃƒÂ£o" oninput="autoSlug(this)"></div>
       <div class="fg">
-        <label class="fl">Identificador único (link) *</label>
-        <input class="fi" id="ob-slug" placeholder="ex: salão-joao" style="font-family:monospace">
-        <div style="font-size:11px;color:var(--txm);margin-top:6px">Seu link será: <span id="slug-preview" style="color:var(--gold)">app.manipro.click?s=...</span></div>
+        <label class="fl">Identificador ÃƒÂºnico (link) *</label>
+        <input class="fi" id="ob-slug" placeholder="ex: salÃƒÂ£o-joao" style="font-family:monospace">
+        <div style="font-size:11px;color:var(--txm);margin-top:6px">Seu link serÃƒÂ¡: <span id="slug-preview" style="color:var(--gold)">app.manipro.click?s=...</span></div>
       </div>
-      <div class="fg"><label class="fl">Endereço</label><input class="fi" id="ob-addr" placeholder="Rua, número — Bairro, Cidade"></div>
-      <div class="fg"><label class="fl">WhatsApp (com código do país)</label><input class="fi" id="ob-wa" placeholder="5511999999999" type="tel"></div>
+      <div class="fg"><label class="fl">EndereÃƒÂ§o</label><input class="fi" id="ob-addr" placeholder="Rua, nÃƒÂºmero Ã¢â‚¬â€ Bairro, Cidade"></div>
+      <div class="fg"><label class="fl">WhatsApp (com cÃƒÂ³digo do paÃƒÂ­s)</label><input class="fi" id="ob-wa" placeholder="5511999999999" type="tel"></div>
       <div class="fg"><label class="fl">Chave PIX</label><input class="fi" id="ob-pix" placeholder="CPF, CNPJ, email ou celular"></div>
-      <button class="btn btn-gold" id="btn-ob" onclick="saveOnboarding()">Criar minha salão →</button>
+      <button class="btn btn-gold" id="btn-ob" onclick="saveOnboarding()">Criar minha salÃƒÂ£o Ã¢â€ â€™</button>
       <button class="btn btn-out" onclick="doLogout()">Sair</button>
     </div>
   </div>
@@ -206,8 +206,8 @@ html,body{overscroll-behavior-y:none;}
 
 <div id="planos" class="screen">
   <div style="display:flex;flex-direction:column;align-items:center;padding:40px 24px;overflow-y:auto;flex:1">
-    <div style="font-family:'Playfair Display',serif;font-size:36px;font-weight:900;color:var(--gold);text-align:center">💅 ManiPro</div>
-    <div style="font-size:13px;color:var(--txm);text-align:center;margin:8px 0 32px;line-height:1.6">Sistema completo de agendamento para sua salão.<br>Escolha o plano ideal:</div>
+    <div style="font-family:'Playfair Display',serif;font-size:36px;font-weight:900;color:var(--gold);text-align:center">Ã°Å¸â€™â€¦ ManiPro</div>
+    <div style="font-size:13px;color:var(--txm);text-align:center;margin:8px 0 32px;line-height:1.6">Sistema completo de agendamento para sua salÃƒÂ£o.<br>Escolha o plano ideal:</div>
 
     <!-- PLANO MENSAL -->
     <div style="width:100%;max-width:380px;background:var(--dk3);border:1px solid var(--dk4);border-radius:var(--r);padding:24px;margin-bottom:16px">
@@ -215,11 +215,11 @@ html,body{overscroll-behavior-y:none;}
       <div style="font-size:13px;color:var(--txm);margin-bottom:16px">Renovacao automatica todo mes</div>
       <div style="font-size:38px;font-weight:900;color:var(--gold);margin-bottom:4px">R$ 47<small style="font-size:14px;color:var(--txm)">/mes</small></div>
       <div style="display:flex;flex-direction:column;gap:8px;margin:16px 0">
-        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">✓</span>Agendamento online para clientes</div>
-        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">✓</span>Painel admin completo</div>
-        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">✓</span>Gestao de profissionals e servicos</div>
-        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">✓</span>Notificacao WhatsApp automatica</div>
-        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">✓</span>Relatorios financeiros</div>
+        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">Ã¢Å“â€œ</span>Agendamento online para clientes</div>
+        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">Ã¢Å“â€œ</span>Painel admin completo</div>
+        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">Ã¢Å“â€œ</span>Gestao de profissionals e servicos</div>
+        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">Ã¢Å“â€œ</span>Notificacao WhatsApp automatica</div>
+        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">Ã¢Å“â€œ</span>Relatorios financeiros</div>
       </div>
       <a id="btn-hotmart-monthly" href="https://pay.hotmart.com/S106355953K" target="_blank" style="display:block;background:var(--gold);color:var(--dk);border-radius:50px;padding:15px;text-align:center;font-weight:700;font-size:15px;text-decoration:none;margin-top:8px" id="plan-btn-monthly-text">Assinar por R$ 47/mes</a>
     </div>
@@ -230,30 +230,30 @@ html,body{overscroll-behavior-y:none;}
       <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-bottom:4px">Plano Anual</div>
       <div style="font-size:13px;color:var(--txm);margin-bottom:16px">Pague uma vez, use o ano todo</div>
       <div style="font-size:38px;font-weight:900;color:var(--gold);margin-bottom:4px">R$ 397<small style="font-size:14px;color:var(--txm)">/ano</small></div>
-      <div style="font-size:12px;color:var(--grn);margin-bottom:16px;font-weight:600">Economize R$ 167 — equivale a R$ 33/mes</div>
+      <div style="font-size:12px;color:var(--grn);margin-bottom:16px;font-weight:600">Economize R$ 167 Ã¢â‚¬â€ equivale a R$ 33/mes</div>
       <div style="display:flex;flex-direction:column;gap:8px;margin:16px 0">
-        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">✓</span>Tudo do plano mensal</div>
-        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">✓</span>Suporte prioritario</div>
-        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">✓</span>Acesso a novidades em primeira mao</div>
+        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">Ã¢Å“â€œ</span>Tudo do plano mensal</div>
+        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">Ã¢Å“â€œ</span>Suporte prioritario</div>
+        <div style="font-size:13px;color:var(--txm);display:flex;gap:8px"><span style="color:var(--grn);font-weight:700">Ã¢Å“â€œ</span>Acesso a novidades em primeira mao</div>
       </div>
       <a id="btn-hotmart-annual" href="https://pay.hotmart.com/R106437467S" target="_blank" style="display:block;background:var(--gold);color:var(--dk);border-radius:50px;padding:15px;text-align:center;font-weight:700;font-size:15px;text-decoration:none;margin-top:8px" id="plan-btn-annual-text">Assinar por R$ 397/ano</a>
     </div>
 
     <div style="font-size:11px;color:var(--txm);text-align:center;line-height:1.7;margin-bottom:20px">
       Apos o pagamento na Hotmart voce recebera um e-mail com suas credenciais de acesso.<br>
-      <span style="color:var(--gold);cursor:pointer" onclick="enterApp('adm-login')">Ja sou assinante — Fazer login →</span>
+      <span style="color:var(--gold);cursor:pointer" onclick="enterApp('adm-login')">Ja sou assinante Ã¢â‚¬â€ Fazer login Ã¢â€ â€™</span>
     </div>
-    <button class="btn btn-out" onclick="enterApp('splash')" style="max-width:380px;width:100%">← Voltar</button>
+    <button class="btn btn-out" onclick="enterApp('splash')" style="max-width:380px;width:100%">Ã¢â€ Â Voltar</button>
   </div>
 </div>
 
 <!-- CLIENT APP -->
 <div id="client-app" class="screen">
   <div class="hdr">
-    <div class="logo">💅 ManiPro</div>
+    <div class="logo">Ã°Å¸â€™â€¦ ManiPro</div>
     <div style="display:flex;gap:10px">
-      <div onclick="showC('meus')" style="background:var(--dk3);border:1px solid var(--dk5);width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer">📋</div>
-      <div onclick="showC('perfil')" style="background:var(--dk3);border:1px solid var(--dk5);width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer">👤</div>
+      <div onclick="showC('meus')" style="background:var(--dk3);border:1px solid var(--dk5);width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer">Ã°Å¸â€œâ€¹</div>
+      <div onclick="showC('perfil')" style="background:var(--dk3);border:1px solid var(--dk5);width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer">Ã°Å¸â€˜Â¤</div>
     </div>
   </div>
   <div class="content" id="cc">
@@ -261,7 +261,7 @@ html,body{overscroll-behavior-y:none;}
     <!-- HOME -->
     <div id="sc-home" class="csec">
       <div style="background:linear-gradient(160deg,var(--dk2),var(--dk));padding:28px 20px 24px;position:relative;overflow:hidden">
-        <div style="position:absolute;right:-10px;top:10px;font-size:100px;opacity:.04">💅</div>
+        <div style="position:absolute;right:-10px;top:10px;font-size:100px;opacity:.04">Ã°Å¸â€™â€¦</div>
         <div style="font-size:13px;color:var(--txm)">Bem-vindo a</div>
         <div style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700" id="h-name">ManiPro</div>
         <div id="h-hours" style="display:inline-flex;align-items:center;background:rgba(155,89,182,.12);border:1px solid rgba(155,89,182,.3);color:var(--gold);padding:5px 12px;border-radius:50px;font-size:12px;margin-top:12px">Aberto agora</div>
@@ -270,14 +270,14 @@ html,body{overscroll-behavior-y:none;}
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 20px 4px">
         <div onclick="showC('agendar')" style="background:linear-gradient(135deg,var(--gd),var(--gold));border-radius:var(--r);padding:18px;cursor:pointer;grid-column:span 2;display:flex;align-items:center;justify-content:space-between">
           <div><div style="color:var(--dk);font-size:17px;font-weight:700">Agendar Horario</div><div style="color:rgba(0,0,0,.6);font-size:12px">Rapido e facil</div></div>
-          <div style="font-size:32px">📅</div>
+          <div style="font-size:32px">Ã°Å¸â€œâ€¦</div>
         </div>
         <div onclick="showC('servicos')" style="background:var(--dk3);border:1px solid var(--dk4);border-radius:var(--r);padding:18px;cursor:pointer">
           <div style="width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--gd),var(--gold));display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:var(--dk);margin-bottom:8px">CO</div>
           <div style="font-size:14px;font-weight:600">Servicos</div><div style="font-size:11px;color:var(--txm)">Ver precos</div>
         </div>
         <div onclick="showC('pacotes')" style="background:var(--dk3);border:1px solid var(--dk4);border-radius:var(--r);padding:18px;cursor:pointer">
-          <div style="font-size:26px;margin-bottom:8px">🎁</div>
+          <div style="font-size:26px;margin-bottom:8px">Ã°Å¸Å½Â</div>
           <div style="font-size:14px;font-weight:600">Pacotes</div><div style="font-size:11px;color:var(--txm)">Economize mais</div>
         </div>
       </div>
@@ -286,29 +286,29 @@ html,body{overscroll-behavior-y:none;}
       <div class="divider"></div>
       <div class="sec-title">Nos encontre</div>
       <div style="display:flex;gap:10px;padding:0 20px 16px">
-        <div onclick="openWA()" style="flex:1;background:var(--dk3);border:1px solid #25D366;border-radius:var(--rs);padding:12px 8px;text-align:center;cursor:pointer;font-size:20px;color:#25D366">💬<div style="font-size:11px;margin-top:4px;font-weight:500">WhatsApp</div></div>
-        <div id="btn-ig" style="flex:1;background:var(--dk3);border:1px solid #E1306C;border-radius:var(--rs);padding:12px 8px;text-align:center;cursor:pointer;font-size:20px;color:#E1306C">📸<div style="font-size:11px;margin-top:4px;font-weight:500">Instagram</div></div>
+        <div onclick="openWA()" style="flex:1;background:var(--dk3);border:1px solid #25D366;border-radius:var(--rs);padding:12px 8px;text-align:center;cursor:pointer;font-size:20px;color:#25D366">Ã°Å¸â€™Â¬<div style="font-size:11px;margin-top:4px;font-weight:500">WhatsApp</div></div>
+        <div id="btn-ig" style="flex:1;background:var(--dk3);border:1px solid #E1306C;border-radius:var(--rs);padding:12px 8px;text-align:center;cursor:pointer;font-size:20px;color:#E1306C">Ã°Å¸â€œÂ¸<div style="font-size:11px;margin-top:4px;font-weight:500">Instagram</div></div>
       </div>
       <div style="padding:0 20px 20px;text-align:center">
         <div style="font-size:12px;color:var(--txm)" id="h-addr"></div>
         <div style="font-size:12px;color:var(--txm);margin-top:4px" id="h-sched"></div>
       </div>
 
-      <!-- BANNER SAAS — visível quando não há ?s= na URL (modo demo) -->
+      <!-- BANNER SAAS Ã¢â‚¬â€ visÃƒÂ­vel quando nÃƒÂ£o hÃƒÂ¡ ?s= na URL (modo demo) -->
       <div id="saas-banner" style="display:none;margin:0 20px 24px">
         <div style="background:linear-gradient(135deg,#1a1a1a,#242424);border:1px solid rgba(155,89,182,.4);border-radius:var(--r);padding:20px;text-align:center;position:relative;overflow:hidden">
           <div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(155,89,182,.08),transparent 70%);pointer-events:none"></div>
-          <div style="font-size:22px;margin-bottom:8px">💅</div>
+          <div style="font-size:22px;margin-bottom:8px">Ã°Å¸â€™â€¦</div>
           <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--gold);margin-bottom:6px">Gostou? Tenha o seu!</div>
           <div style="font-size:12px;color:var(--txm);line-height:1.6;margin-bottom:16px">
-            Este é o <strong style="color:var(--tx)">ManiPro</strong> — sistema completo de agendamento para salãos.<br>
-            Crie sua versão personalizada por apenas <strong style="color:var(--gold)">R$ 47/mês</strong>.
+            Este ÃƒÂ© o <strong style="color:var(--tx)">ManiPro</strong> Ã¢â‚¬â€ sistema completo de agendamento para salÃƒÂ£os.<br>
+            Crie sua versÃƒÂ£o personalizada por apenas <strong style="color:var(--gold)">R$ 47/mÃƒÂªs</strong>.
           </div>
           <button onclick="enterApp('planos')" style="background:var(--gold);color:var(--dk);border:none;border-radius:50px;padding:12px 28px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:14px;cursor:pointer;width:100%;margin-bottom:10px">
-            Ver planos e preços →
+            Ver planos e preÃƒÂ§os Ã¢â€ â€™
           </button>
           <button onclick="enterApp('adm-login')" style="background:transparent;color:var(--txm);border:1px solid var(--dk4);border-radius:50px;padding:10px 28px;font-family:'DM Sans',sans-serif;font-size:13px;cursor:pointer;width:100%">
-            Já sou assinante — Entrar
+            JÃƒÂ¡ sou assinante Ã¢â‚¬â€ Entrar
           </button>
         </div>
       </div>
@@ -317,7 +317,7 @@ html,body{overscroll-behavior-y:none;}
     <!-- AGENDAR -->
     <div id="sc-agendar" class="csec" style="display:none">
       <div style="padding:20px 20px 0;display:flex;align-items:center;gap:12px">
-        <div onclick="showC('home')" style="font-size:22px;cursor:pointer;color:var(--txm)">←</div>
+        <div onclick="showC('home')" style="font-size:22px;cursor:pointer;color:var(--txm)">Ã¢â€ Â</div>
         <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700">Novo Agendamento</div>
       </div>
       <!-- STEP 1: services -->
@@ -344,7 +344,7 @@ html,body{overscroll-behavior-y:none;}
           </div>
         </div>
         <div style="padding:20px">
-          <button class="btn btn-gold" id="btn-bk1" onclick="goStep(2)" disabled>Proximo →</button>
+          <button class="btn btn-gold" id="btn-bk1" onclick="goStep(2)" disabled>Proximo Ã¢â€ â€™</button>
         </div>
       </div>
       <!-- STEP 2: barber -->
@@ -357,8 +357,8 @@ html,body{overscroll-behavior-y:none;}
           </div>
         </div>
         <div style="padding:20px">
-          <button class="btn btn-gold" id="btn-bk2" onclick="goStep(3)" disabled>Proximo →</button>
-          <button class="btn btn-out" onclick="goStep(1)">← Voltar</button>
+          <button class="btn btn-gold" id="btn-bk2" onclick="goStep(3)" disabled>Proximo Ã¢â€ â€™</button>
+          <button class="btn btn-out" onclick="goStep(1)">Ã¢â€ Â Voltar</button>
         </div>
       </div>
       <!-- STEP 3: date/time -->
@@ -376,8 +376,8 @@ html,body{overscroll-behavior-y:none;}
           <div class="tg" id="tg"></div>
         </div>
         <div style="padding:20px">
-          <button class="btn btn-gold" id="btn-bk3" onclick="goStep(4)" disabled>Proximo →</button>
-          <button class="btn btn-out" onclick="goStep(2)">← Voltar</button>
+          <button class="btn btn-gold" id="btn-bk3" onclick="goStep(4)" disabled>Proximo Ã¢â€ â€™</button>
+          <button class="btn btn-out" onclick="goStep(2)">Ã¢â€ Â Voltar</button>
         </div>
       </div>
       <!-- STEP 4: payment -->
@@ -390,15 +390,15 @@ html,body{overscroll-behavior-y:none;}
           <div class="fg"><label class="fl">WhatsApp</label><input class="fi" id="bk-phone" type="tel" placeholder="(11) 99999-9999"></div>
           <div style="font-weight:600;font-size:14px;margin-bottom:10px">Forma de Pagamento</div>
           <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px">
-            <div class="pay-opt" data-m="pix" onclick="selPay(this,'pix')"><div id="popt-pix" style="display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--dk3);border:1.5px solid var(--dk4);border-radius:var(--rs);cursor:pointer"><span style="font-size:22px">💲</span><div><div style="font-weight:600">PIX</div><div style="font-size:11px;color:var(--txm)">Pagamento instantaneo</div></div></div></div>
+            <div class="pay-opt" data-m="pix" onclick="selPay(this,'pix')"><div id="popt-pix" style="display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--dk3);border:1.5px solid var(--dk4);border-radius:var(--rs);cursor:pointer"><span style="font-size:22px">Ã°Å¸â€™Â²</span><div><div style="font-weight:600">PIX</div><div style="font-size:11px;color:var(--txm)">Pagamento instantaneo</div></div></div></div>
             
-            <div class="pay-opt" data-m="local" onclick="selPay(this,'local')"><div id="popt-local" style="display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--dk3);border:1.5px solid var(--dk4);border-radius:var(--rs);cursor:pointer"><span style="font-size:22px">💵</span><div><div style="font-weight:600">Pagar no Local</div><div style="font-size:11px;color:var(--txm)">Dinheiro ou cartao</div></div></div></div>
+            <div class="pay-opt" data-m="local" onclick="selPay(this,'local')"><div id="popt-local" style="display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--dk3);border:1.5px solid var(--dk4);border-radius:var(--rs);cursor:pointer"><span style="font-size:22px">Ã°Å¸â€™Âµ</span><div><div style="font-weight:600">Pagar no Local</div><div style="font-size:11px;color:var(--txm)">Dinheiro ou cartao</div></div></div></div>
           </div>
           <!-- PIX box -->
           <div id="pix-box" style="display:none">
             <div style="font-weight:600;font-size:14px;margin-bottom:10px">Pague via PIX</div>
-            <div style="background:#fff;border-radius:var(--r);width:160px;height:160px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-size:48px">📱</div>
-            <div class="pbox" id="pix-key-disp">salão@pix.com</div>
+            <div style="background:#fff;border-radius:var(--r);width:160px;height:160px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-size:48px">Ã°Å¸â€œÂ±</div>
+            <div class="pbox" id="pix-key-disp">salÃƒÂ£o@pix.com</div>
             <button class="btn btn-gold" onclick="copyPix()" style="margin-bottom:10px">Copiar Chave PIX</button>
             <button class="btn btn-grn" onclick="confirmPay('pix')">Confirmar Agendamento</button>
           </div>
@@ -414,19 +414,19 @@ html,body{overscroll-behavior-y:none;}
           <!-- Local box -->
           <div id="local-box" style="display:none">
             <div style="background:var(--dk3);border:1px solid var(--dk4);border-radius:var(--r);padding:16px;margin-bottom:14px;font-size:13px;color:var(--txm);line-height:1.6">
-              Voce escolheu pagar no local. O pagamento sera realizado na salão no dia do atendimento.
+              Voce escolheu pagar no local. O pagamento sera realizado na salÃƒÂ£o no dia do atendimento.
             </div>
             <button class="btn btn-gold" onclick="confirmPay('local')">Confirmar Agendamento</button>
           </div>
         </div>
         <div style="padding:0 20px 20px">
-          <button class="btn btn-out" onclick="goStep(3)">← Voltar</button>
+          <button class="btn btn-out" onclick="goStep(3)">Ã¢â€ Â Voltar</button>
         </div>
       </div>
       <!-- SUCCESS -->
       <div id="bk-ok" style="display:none">
         <div class="succ">
-          <div class="succ-ic">✅</div>
+          <div class="succ-ic">Ã¢Å“â€¦</div>
           <div style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700">Agendado!</div>
           <div style="font-size:14px;color:var(--txm);line-height:1.6">Horario confirmado! O proprietario foi notificado pelo WhatsApp.</div>
           <div class="card" style="width:100%;text-align:left" id="ok-detail"></div>
@@ -439,17 +439,17 @@ html,body{overscroll-behavior-y:none;}
     <!-- SERVICOS -->
     <div id="sc-servicos" class="csec" style="display:none">
       <div style="padding:20px 20px 12px;display:flex;align-items:center;gap:12px">
-        <div onclick="showC('home')" style="font-size:22px;cursor:pointer;color:var(--txm)">←</div>
+        <div onclick="showC('home')" style="font-size:22px;cursor:pointer;color:var(--txm)">Ã¢â€ Â</div>
         <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700">Servicos & Precos</div>
       </div>
       <div id="svc-menu"><div style="text-align:center;padding:40px"><div class="spin"></div></div></div>
-      <div style="padding:20px"><button class="btn btn-gold" onclick="showC('agendar')">Agendar agora 📅</button></div>
+      <div style="padding:20px"><button class="btn btn-gold" onclick="showC('agendar')">Agendar agora Ã°Å¸â€œâ€¦</button></div>
     </div>
 
     <!-- PACOTES -->
     <div id="sc-pacotes" class="csec" style="display:none">
       <div style="padding:20px 20px 12px;display:flex;align-items:center;gap:12px">
-        <div onclick="showC('home')" style="font-size:22px;cursor:pointer;color:var(--txm)">←</div>
+        <div onclick="showC('home')" style="font-size:22px;cursor:pointer;color:var(--txm)">Ã¢â€ Â</div>
         <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700">Pacotes & Planos</div>
       </div>
       <div id="pkg-list"><div style="text-align:center;padding:40px"><div class="spin"></div></div></div>
@@ -468,7 +468,7 @@ html,body{overscroll-behavior-y:none;}
     <!-- PERFIL -->
     <div id="sc-perfil" class="csec" style="display:none">
       <div style="padding:28px 20px 20px;text-align:center;background:var(--dk2);border-bottom:1px solid var(--dk4)">
-        <div style="width:72px;height:72px;border-radius:50%;background:var(--dk4);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 12px">👤</div>
+        <div style="width:72px;height:72px;border-radius:50%;background:var(--dk4);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 12px">Ã°Å¸â€˜Â¤</div>
         <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700">Meu Perfil</div>
       </div>
       <div style="padding:20px">
@@ -481,20 +481,20 @@ html,body{overscroll-behavior-y:none;}
     </div>
 
   </div>
-  <button onclick="showC('agendar')" style="position:fixed;bottom:90px;right:20px;background:var(--gold);color:var(--dk);width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 16px rgba(155,89,182,.4);cursor:pointer;z-index:150;border:none">📅</button>
+  <button onclick="showC('agendar')" style="position:fixed;bottom:90px;right:20px;background:var(--gold);color:var(--dk);width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 16px rgba(155,89,182,.4);cursor:pointer;z-index:150;border:none">Ã°Å¸â€œâ€¦</button>
   <div class="bnav">
-    <button class="ni active" id="cn-home" onclick="showC('home')"><div class="ni-ic">🏠</div>Inicio</button>
+    <button class="ni active" id="cn-home" onclick="showC('home')"><div class="ni-ic">Ã°Å¸ÂÂ </div>Inicio</button>
     
     
-    <button class="ni" id="cn-meus" onclick="showC('meus')"><div class="ni-ic">📋</div>Meus</button>
-    <button class="ni" id="cn-perfil" onclick="showC('perfil')"><div class="ni-ic">👤</div>Perfil</button>
+    <button class="ni" id="cn-meus" onclick="showC('meus')"><div class="ni-ic">Ã°Å¸â€œâ€¹</div>Meus</button>
+    <button class="ni" id="cn-perfil" onclick="showC('perfil')"><div class="ni-ic">Ã°Å¸â€˜Â¤</div>Perfil</button>
   </div>
 </div>
 
 <!-- ADMIN APP -->
 <div id="admin-app" class="screen">
   <div class="hdr">
-    <div class="logo">⚙ ManiPro</div>
+    <div class="logo">Ã¢Å¡â„¢ ManiPro</div>
     <div style="display:flex;align-items:center;gap:10px">
       <span id="logged-user-name" style="font-size:12px;color:var(--gold);font-weight:600"></span>
       <button onclick="doLogout()" style="background:transparent;border:1px solid var(--dk5);color:var(--txm);border-radius:50px;padding:6px 14px;font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif">Sair</button>
@@ -506,22 +506,22 @@ html,body{overscroll-behavior-y:none;}
     <div id="as-dash">
       <div style="padding:16px 20px 8px;display:flex;align-items:center;justify-content:space-between">
         <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700">Dashboard</div>
-        <button onclick="loadDash()" style="background:var(--dk3);border:1px solid var(--dk4);color:var(--txm);border-radius:50px;padding:6px 14px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">🔄 Atualizar</button><button onclick="exportDash()" style="background:var(--dk3);border:1px solid var(--dk4);color:var(--gold);border-radius:50px;padding:6px 14px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">⬇ Excel</button>
+        <button onclick="loadDash()" style="background:var(--dk3);border:1px solid var(--dk4);color:var(--txm);border-radius:50px;padding:6px 14px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">Ã°Å¸â€â€ž Atualizar</button><button onclick="exportDash()" style="background:var(--dk3);border:1px solid var(--dk4);color:var(--gold);border-radius:50px;padding:6px 14px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">Ã¢Â¬â€¡ Excel</button>
       </div>
       <div class="sg">
         <div class="sc"><div class="sl">Hoje</div><div class="sv" id="st-today">-</div></div>
         <div class="sc"><div class="sl">Receita (encerrados)</div><div class="sv" id="st-rtd">-</div></div>
         <div class="sc"><div class="sl">Encerrados</div><div class="sv" id="st-month">-</div></div>
-        <div class="sc"><div class="sl">Lucro líquido</div><div class="sv" id="st-rm">-</div></div>
+        <div class="sc"><div class="sl">Lucro lÃƒÂ­quido</div><div class="sv" id="st-rm">-</div></div>
       </div>
       <div style="padding:16px 20px 8px;display:flex;align-items:center;justify-content:space-between">
-        <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700">Próximos Agendamentos</div>
+        <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700">PrÃƒÂ³ximos Agendamentos</div>
         <div style="background:var(--dk4);border-radius:50px;padding:4px 10px;font-size:11px;color:var(--txm)" id="td-lbl"></div>
       </div>
       <div id="dash-reminders" style="padding:0 20px 12px;display:none">
       <div style="background:var(--dk2);border-radius:12px;padding:16px">
-        <div style="font-weight:700;font-size:15px;color:#9B59B6;margin-bottom:12px">🔔 Lembretes para enviar</div>
-        <div style="font-size:12px;color:var(--txm);margin-bottom:10px">Clientes com horário nas próximas 2 horas:</div>
+        <div style="font-weight:700;font-size:15px;color:#9B59B6;margin-bottom:12px">Ã°Å¸â€â€ Lembretes para enviar</div>
+        <div style="font-size:12px;color:var(--txm);margin-bottom:10px">Clientes com horÃƒÂ¡rio nas prÃƒÂ³ximas 2 horas:</div>
         <div id="reminder-list"></div>
       </div>
     </div>
@@ -532,7 +532,7 @@ html,body{overscroll-behavior-y:none;}
     <div id="as-agenda" style="display:none">
       <div style="padding:20px 20px 12px;display:flex;align-items:center;justify-content:space-between">
         <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700">Agenda</div>
-        <div style="display:flex;gap:8px"><button onclick="loadAgenda()" style="background:var(--dk3);border:1px solid var(--dk4);color:var(--txm);border-radius:50px;padding:8px 14px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">🔄 Atualizar</button><button onclick="exportAgenda()" style="background:var(--dk3);border:1px solid var(--dk4);color:var(--gold);border-radius:50px;padding:8px 14px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">⬇ Excel</button><button onclick="deleteFinalized()" style="background:rgba(192,57,43,.1);color:var(--red);border:1px solid var(--red);border-radius:50px;padding:8px 14px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">🗑 Limpar</button><button onclick="openAdmBook()" style="background:var(--gold);color:var(--dk);border:none;border-radius:50px;padding:8px 16px;font-size:13px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">+ Novo</button></div>
+        <div style="display:flex;gap:8px"><button onclick="loadAgenda()" style="background:var(--dk3);border:1px solid var(--dk4);color:var(--txm);border-radius:50px;padding:8px 14px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">Ã°Å¸â€â€ž Atualizar</button><button onclick="exportAgenda()" style="background:var(--dk3);border:1px solid var(--dk4);color:var(--gold);border-radius:50px;padding:8px 14px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">Ã¢Â¬â€¡ Excel</button><button onclick="deleteFinalized()" style="background:rgba(192,57,43,.1);color:var(--red);border:1px solid var(--red);border-radius:50px;padding:8px 14px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">Ã°Å¸â€”â€˜ Limpar</button><button onclick="openAdmBook()" style="background:var(--gold);color:var(--dk);border:none;border-radius:50px;padding:8px 16px;font-size:13px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">+ Novo</button></div>
       </div>
       <div class="tabs" id="ag-tabs">
         <div class="tab active" onclick="swAgTab('hoje',this)">Hoje</div>
@@ -578,21 +578,21 @@ html,body{overscroll-behavior-y:none;}
     <div id="as-config" style="display:none">
       <div style="padding:20px 20px 12px"><div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700">Configuracoes</div></div>
       <div style="padding:0 20px">
-        <div class="fg"><label class="fl">Nome da salão</label><input class="fi" id="cfg-name"></div>
+        <div class="fg"><label class="fl">Nome da salÃƒÂ£o</label><input class="fi" id="cfg-name"></div>
         <div class="fg"><label class="fl">Endereco</label><input class="fi" id="cfg-addr"></div>
         <div class="fg"><label class="fl">WhatsApp admin (com DDI: 5511...)</label><input class="fi" id="cfg-wa" placeholder="5511999999999"></div>
         <div class="fg"><label class="fl">Instagram</label><input class="fi" id="cfg-ig" placeholder="@usuario"></div>
         <div class="fg"><label class="fl">Chave PIX</label><input class="fi" id="cfg-pix"></div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-          <div class="fg"><label class="fl">Abre às</label><input class="fi" type="time" id="cfg-open"></div>
-          <div class="fg"><label class="fl">Fecha às</label><input class="fi" type="time" id="cfg-close"></div>
+          <div class="fg"><label class="fl">Abre ÃƒÂ s</label><input class="fi" type="time" id="cfg-open"></div>
+          <div class="fg"><label class="fl">Fecha ÃƒÂ s</label><input class="fi" type="time" id="cfg-close"></div>
         </div>
-        <div style="font-size:12px;font-weight:700;color:var(--txm);letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px">🍽 Horário de Almoço (opcional)</div>
+        <div style="font-size:12px;font-weight:700;color:var(--txm);letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px">Ã°Å¸ÂÂ½ HorÃƒÂ¡rio de AlmoÃƒÂ§o (opcional)</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-          <div class="fg"><label class="fl">Início do almoço</label><input class="fi" type="time" id="cfg-lunch-start" placeholder="12:00"></div>
-          <div class="fg"><label class="fl">Fim do almoço</label><input class="fi" type="time" id="cfg-lunch-end" placeholder="13:00"></div>
+          <div class="fg"><label class="fl">InÃƒÂ­cio do almoÃƒÂ§o</label><input class="fi" type="time" id="cfg-lunch-start" placeholder="12:00"></div>
+          <div class="fg"><label class="fl">Fim do almoÃƒÂ§o</label><input class="fi" type="time" id="cfg-lunch-end" placeholder="13:00"></div>
         </div>
-        <div class="fg"><label class="fl">Intervalo entre horários (minutos)</label>
+        <div class="fg"><label class="fl">Intervalo entre horÃƒÂ¡rios (minutos)</label>
           <select class="fi" id="cfg-slot">
             <option value="15">15 minutos</option>
             <option value="20">20 minutos</option>
@@ -604,7 +604,7 @@ html,body{overscroll-behavior-y:none;}
         <button class="btn btn-gold" onclick="saveSettings()" style="width:100%;margin-top:16px;padding:14px">Salvar configuracoes</button>
         <div id="super-admin-section" style="display:none"><div style="height:8px;background:var(--dk);margin:8px -20px"></div>
 <div class="sa-only" style="display:none">
-        <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;padding:16px 0 12px">Hotmart — Links de Assinatura</div>
+        <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;padding:16px 0 12px">Hotmart Ã¢â‚¬â€ Links de Assinatura</div>
         <div class="fg"><label class="fl">Link Plano Mensal (Hotmart)</label><input class="fi" id="cfg-hm-monthly" placeholder="https://pay.hotmart.com/..."></div>
         <div class="fg"><label class="fl">Link Plano Anual (Hotmart)</label><input class="fi" id="cfg-hm-annual" placeholder="https://pay.hotmart.com/..."></div>
         <div style="height:8px;background:var(--dk);margin:8px -20px"></div>
@@ -619,27 +619,27 @@ html,body{overscroll-behavior-y:none;}
         </div>
         <div style="background:var(--dk3);border:1px solid var(--dk4);border-radius:var(--rs);padding:12px;margin-bottom:14px;font-size:12px;color:var(--txm);line-height:1.7">
           <strong style="color:var(--gold)">Webhook Hotmart:</strong><br>
-          Configure na Hotmart em: Ferramentas → Webhooks<br>
+          Configure na Hotmart em: Ferramentas Ã¢â€ â€™ Webhooks<br>
           URL: <span style="color:var(--gold);word-break:break-all">https://zheqdrblwlhvzxrdaifo.supabase.co/functions/v1/hotmart-webhook</span><br>
           Eventos: PURCHASE_COMPLETE, SUBSCRIPTION_CANCELLATION
         </div>
         <div class="fg" style="background:rgba(155,89,182,.08);border:1px solid rgba(155,89,182,.3);border-radius:var(--rs);padding:14px;margin-bottom:8px">
-          <label class="fl" style="color:var(--gold)">🏠 Salão padrão do link principal</label>
+          <label class="fl" style="color:var(--gold)">Ã°Å¸ÂÂ  SalÃƒÂ£o padrÃƒÂ£o do link principal</label>
           <div style="display:flex;align-items:center;justify-content:space-between">
-            <div style="font-size:13px;color:var(--txm)">Esta salão abre quando alguém acessa<br><strong style="color:var(--gold)">app.manipro.click</strong> sem o ?s=</div>
-            <button onclick="setDefaultShop()" style="background:var(--gold);color:var(--dk);border:none;border-radius:50px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;margin-left:10px">Definir como padrão</button>
+            <div style="font-size:13px;color:var(--txm)">Esta salÃƒÂ£o abre quando alguÃƒÂ©m acessa<br><strong style="color:var(--gold)">app.manipro.click</strong> sem o ?s=</div>
+            <button onclick="setDefaultShop()" style="background:var(--gold);color:var(--dk);border:none;border-radius:50px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;margin-left:10px">Definir como padrÃƒÂ£o</button>
           </div>
         </div>
         <div style="height:8px;background:var(--dk);margin:8px -20px"></div>
 </div>
 
-        <div class="sa-only" style="display:none"><div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;padding:16px 0 12px">👤 Convidar Cliente</div>
+        <div class="sa-only" style="display:none"><div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;padding:16px 0 12px">Ã°Å¸â€˜Â¤ Convidar Cliente</div>
         <div class="card" style="margin-bottom:14px">
-          <div class="fg"><label class="fl">Nome do cliente</label><input class="fi" id="inv-name" placeholder="Ex: João Silva"></div>
+          <div class="fg"><label class="fl">Nome do cliente</label><input class="fi" id="inv-name" placeholder="Ex: JoÃƒÂ£o Silva"></div>
           <div class="fg"><label class="fl">E-mail do cliente</label><input class="fi" type="email" id="inv-email" placeholder="cliente@email.com"></div>
           <div class="errbox" id="inv-err" style="display:none"></div>
-          <div id="inv-ok" style="display:none;background:rgba(39,174,96,.15);border:1px solid var(--grn);border-radius:var(--rs);padding:12px;font-size:13px;color:var(--grn);margin-bottom:12px">✓ Convite enviado com sucesso!</div>
-          <button class="btn btn-gold" id="inv-btn" onclick="inviteClient()">Enviar convite →</button>
+          <div id="inv-ok" style="display:none;background:rgba(39,174,96,.15);border:1px solid var(--grn);border-radius:var(--rs);padding:12px;font-size:13px;color:var(--grn);margin-bottom:12px">Ã¢Å“â€œ Convite enviado com sucesso!</div>
+          <button class="btn btn-gold" id="inv-btn" onclick="inviteClient()">Enviar convite Ã¢â€ â€™</button>
         </div>
         </div>
 
@@ -647,31 +647,31 @@ html,body{overscroll-behavior-y:none;}
       <div class="divider"></div>
       <div class="divider"></div>
       <div style="padding:20px 20px 12px;display:flex;align-items:center;justify-content:space-between">
-        <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700">🚫 Bloquear Horários</div>
+        <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700">Ã°Å¸Å¡Â« Bloquear HorÃƒÂ¡rios</div>
         <button onclick="openBlockMod()" style="background:var(--gold);color:var(--dk);border:none;border-radius:50px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">+ Bloquear</button>
       </div>
       <div id="blocked-list" style="padding:0 20px 16px"><div style="color:var(--txm);font-size:13px">Carregando...</div></div>
-      <div style="padding:20px 20px 12px;font-family:'Playfair Display',serif;font-size:18px;font-weight:700">🔗 Link da sua salão</div>
+      <div style="padding:20px 20px 12px;font-family:'Playfair Display',serif;font-size:18px;font-weight:700">Ã°Å¸â€â€” Link da sua salÃƒÂ£o</div>
       <div style="padding:0 20px 20px">
         <div style="background:var(--dk3);border:1px solid var(--gold);border-radius:var(--r);padding:16px">
           <div style="font-size:12px;color:var(--txm);margin-bottom:8px">Compartilhe este link com seus clientes:</div>
           <div id="cfg-share-link" style="font-size:13px;color:var(--gold);word-break:break-all;font-weight:600;cursor:pointer" onclick="copyShareLink()">Carregando...</div>
-          <button onclick="copyShareLink()" style="margin-top:12px;background:var(--gold);color:var(--dk);border:none;border-radius:50px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;width:100%">📋 Copiar link</button>
+          <button onclick="copyShareLink()" style="margin-top:12px;background:var(--gold);color:var(--dk);border:none;border-radius:50px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;width:100%">Ã°Å¸â€œâ€¹ Copiar link</button>
         </div>
       </div>
       <div class="divider" style="margin-top:16px"></div>
-      <div style="padding:20px 20px 12px;display:flex;align-items:center;justify-content:space-between"><div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700">Profissionals</div><button onclick="loadBarbCfg()" style="background:var(--dk3);border:1px solid var(--dk4);color:var(--gold);border-radius:50px;padding:6px 14px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">🔄 Atualizar</button></div>
+      <div style="padding:20px 20px 12px;display:flex;align-items:center;justify-content:space-between"><div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700">Profissionals</div><button onclick="loadBarbCfg()" style="background:var(--dk3);border:1px solid var(--dk4);color:var(--gold);border-radius:50px;padding:6px 14px;font-size:11px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">Ã°Å¸â€â€ž Atualizar</button></div>
       <div id="barb-cfg"></div>
       <div style="padding:16px 20px"><button class="btn btn-out" onclick="addBarber()">+ Adicionar profissional</button></div>
     </div>
 
   </div>
   <div class="bnav">
-    <button class="ni active" id="an-dash" onclick="showA('dash')"><div class="ni-ic">📊</div>Dashboard</button>
-    <button class="ni" id="an-agenda" onclick="showA('agenda')"><div class="ni-ic">📅</div>Agenda</button>
-    <button class="ni" id="an-servicos" onclick="showA('servicos')"><div class="ni-ic">💅</div>Servicos</button>
-    <button class="ni" id="an-config" onclick="showA('config')"><div class="ni-ic">⚙️</div>Config</button>
-    <button class="ni" id="an-clientes" onclick="showA('clientes')" style="display:none"><div class="ni-ic">👥</div>Clientes</button>
+    <button class="ni active" id="an-dash" onclick="showA('dash')"><div class="ni-ic">Ã°Å¸â€œÅ </div>Dashboard</button>
+    <button class="ni" id="an-agenda" onclick="showA('agenda')"><div class="ni-ic">Ã°Å¸â€œâ€¦</div>Agenda</button>
+    <button class="ni" id="an-servicos" onclick="showA('servicos')"><div class="ni-ic">Ã°Å¸â€™â€¦</div>Servicos</button>
+    <button class="ni" id="an-config" onclick="showA('config')"><div class="ni-ic">Ã¢Å¡â„¢Ã¯Â¸Â</div>Config</button>
+    <button class="ni" id="an-clientes" onclick="showA('clientes')" style="display:none"><div class="ni-ic">Ã°Å¸â€˜Â¥</div>Clientes</button>
   </div>
 </div>
 
@@ -689,7 +689,7 @@ html,body{overscroll-behavior-y:none;}
     </div>
     <!-- Indicador de sessoes -->
     <div id="pkb-dots" style="display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap"></div>
-    <!-- Calendário -->
+    <!-- CalendÃƒÂ¡rio -->
     <div id="pkb-cal-area">
       <div style="background:var(--dk2);border:2px solid var(--gold);border-radius:12px;padding:16px;margin-bottom:20px"><div style="font-weight:700;font-size:15px;color:var(--gold);margin-bottom:10px">Escolha o Profissional</div><select class="fi" id="pkb-barber" style="background:var(--dk3);color:var(--tx);border:1px solid var(--dk4);border-radius:10px;padding:14px 16px;font-size:16px;font-family:inherit;width:100%;font-weight:600"><option value="">A definir</option></select></div>
       <div style="font-weight:600;font-size:14px;margin-bottom:12px">Escolha a data</div>
@@ -699,7 +699,7 @@ html,body{overscroll-behavior-y:none;}
         <div onclick="pkbChMon(1)" style="background:var(--dk3);border:1px solid var(--dk4);border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;color:var(--txm)">&#8250;</div>
       </div>
       <div class="cal-grid" id="pkb-cal-grid"></div>
-      <div style="font-weight:600;font-size:14px;margin:14px 0 10px">Horário</div>
+      <div style="font-weight:600;font-size:14px;margin:14px 0 10px">HorÃƒÂ¡rio</div>
       <div class="tg" id="pkb-tg"></div>
     </div>
     <!-- Tela final: nome + whatsapp -->
@@ -713,8 +713,8 @@ html,body{overscroll-behavior-y:none;}
     </div>
     <!-- Botoes -->
     <div style="margin-top:16px;display:flex;flex-direction:column;gap:10px">
-      <button class="btn btn-gold" id="pkb-btn-next" onclick="pkbNext()" disabled>Próxima sessão →</button>
-      <button class="btn btn-out" id="pkb-btn-back" onclick="pkbBack()">← Voltar</button>
+      <button class="btn btn-gold" id="pkb-btn-next" onclick="pkbNext()" disabled>PrÃƒÂ³xima sessÃƒÂ£o Ã¢â€ â€™</button>
+      <button class="btn btn-out" id="pkb-btn-back" onclick="pkbBack()">Ã¢â€ Â Voltar</button>
       <button class="btn btn-out" onclick="closeMod('mod-pkg-book')">Cancelar</button>
     </div>
   </div>
@@ -722,10 +722,10 @@ html,body{overscroll-behavior-y:none;}
 
 <!-- MODALS -->
 <div class="mov" id="mod-block">
-  <div class="msh"><div class="mhd"></div><div class="mt">Bloquear Horários</div>
+  <div class="msh"><div class="mhd"></div><div class="mt">Bloquear HorÃƒÂ¡rios</div>
     <div class="fg"><label class="fl">Data</label><input class="fi" type="date" id="blk-date" onchange="renderBlockSlots()"></div>
-    <div class="fg"><label class="fl">Motivo (opcional)</label><input class="fi" id="blk-reason" placeholder="Ex: Almoço, Reunião..."></div>
-    <div style="font-size:12px;color:var(--txm);margin-bottom:8px">Toque nos horários que deseja bloquear:</div>
+    <div class="fg"><label class="fl">Motivo (opcional)</label><input class="fi" id="blk-reason" placeholder="Ex: AlmoÃƒÂ§o, ReuniÃƒÂ£o..."></div>
+    <div style="font-size:12px;color:var(--txm);margin-bottom:8px">Toque nos horÃƒÂ¡rios que deseja bloquear:</div>
     <div id="blk-slots" style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-height:300px;overflow-y:auto;padding:4px 0"></div>
     <div id="blk-count" style="font-size:12px;color:var(--gold);font-weight:600;margin:10px 0;text-align:center"></div>
     <button class="btn btn-gold" onclick="saveBlock()" style="margin-bottom:10px">Bloquear selecionados</button>
@@ -754,7 +754,7 @@ html,body{overscroll-behavior-y:none;}
       <div class="fg"><label class="fl">Preco (R$)</label><input class="fi" id="sm-price" type="number" min="0"></div>
       <div class="fg"><label class="fl">Duracao (min)</label><input class="fi" id="sm-dur" type="number" min="5"></div>
     </div>
-    <div class="fg"><label class="fl">Categoria</label><select class="fi" id="sm-cat"><option>Serviços Básicos</option><option>Esmaltados</option><option>Unhas Artificiais &amp; Alongamentos</option><option>Nail Art &amp; Decoração</option><option>Tratamentos para Unhas</option><option>Pedicure Especializada</option><option>Pacotes &amp; Combos</option><option>Serviços Express</option><option>Extras &amp; Complementos</option><option>Outros</option></select></div>
+    <div class="fg"><label class="fl">Categoria</label><select class="fi" id="sm-cat"><option>ServiÃƒÂ§os BÃƒÂ¡sicos</option><option>Esmaltados</option><option>Unhas Artificiais &amp; Alongamentos</option><option>Nail Art &amp; DecoraÃƒÂ§ÃƒÂ£o</option><option>Tratamentos para Unhas</option><option>Pedicure Especializada</option><option>Pacotes &amp; Combos</option><option>ServiÃƒÂ§os Express</option><option>Extras &amp; Complementos</option><option>Outros</option></select></div>
     <div class="fg"><label class="fl">Foto (opcional)</label><input type="file" accept="image/*" id="sm-img" class="fi" style="padding:8px" onchange="if(this.files[0]){const r=new FileReader();r.onload=e=>{const p=document.getElementById('sm-img-preview');p.src=e.target.result;p.style.display='block'};r.readAsDataURL(this.files[0])}"></div>
     <img id="sm-img-preview" style="display:none;width:120px;height:120px;object-fit:cover;border-radius:10px;margin-bottom:10px">
     <input type="hidden" id="sm-id">
@@ -856,7 +856,7 @@ function checkSuperAdmin(){
   });
 }
 async function loadHotmartLinks(){
-  // Sempre buscar links da salão admin (super admin)
+  // Sempre buscar links da salÃƒÂ£o admin (super admin)
   var adminShop=null;
   try{var r=await db.from('shops').select('hotmart_monthly,hotmart_annual,plan_monthly_text,plan_annual_text').eq('id','c5580b36-e699-4bd0-8474-960feb8cec90').maybeSingle();adminShop=r&&r.data?r.data:null;}catch(e){}
   if(!adminShop)adminShop=S.shop||{};
@@ -882,22 +882,22 @@ function applyShop(d){
   const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
   set('sp-name',d.name); set('h-name',d.name);
   const sa=document.getElementById('sp-addr');if(sa)sa.innerHTML=d.name+(d.address?'<br>'+d.address:'');
-  if(d.address){set('h-addr','📍 '+d.address);}
+  if(d.address){set('h-addr','Ã°Å¸â€œÂ '+d.address);}
   const o=(d.opening_time||'09:00').slice(0,5), c=(d.closing_time||'20:00').slice(0,5);
-  set('h-sched','🕐 '+o+' às '+c); set('h-hours','Aberto · Fecha às '+c);
+  set('h-sched','Ã°Å¸â€¢Â '+o+' ÃƒÂ s '+c); set('h-hours','Aberto Ã‚Â· Fecha ÃƒÂ s '+c);
   const pk=document.getElementById('pix-key-disp');if(pk&&d.pix_key)pk.textContent=d.pix_key;
-  document.title='ManiPro – '+d.name;
+  document.title='ManiPro Ã¢â‚¬â€œ '+d.name;
   if(d.instagram){const ib=document.getElementById('btn-ig');if(ib)ib.onclick=()=>window.open('https://instagram.com/'+d.instagram.replace('@',''),'_blank');}
   // Set shop URL hint for sharing
   S.settings=d; // backward compat
 }
-// Verifica se é modo demo: sem ?s= na URL
+// Verifica se ÃƒÂ© modo demo: sem ?s= na URL
 function isDemoMode(){return!new URLSearchParams(window.location.search).get('s');}
 function showC(sec){
   window.scrollTo(0,0);
   document.querySelectorAll('.csec').forEach(s=>s.style.display='none');
   const t=document.getElementById('sc-'+sec);if(t)t.style.display='block';
-  // Mostra banner SaaS apenas quando não há ?s= na URL
+  // Mostra banner SaaS apenas quando nÃƒÂ£o hÃƒÂ¡ ?s= na URL
   if(sec==='home'){const b=document.getElementById('saas-banner');if(b)b.style.display=isDemoMode()?'block':'none';}
   document.querySelectorAll('#client-app .ni').forEach(n=>n.classList.remove('active'));
   const m={home:'cn-home',agendar:'cn-agendar',servicos:'cn-servicos',meus:'cn-meus',perfil:'cn-perfil'};
@@ -963,7 +963,7 @@ async function doLogin(){
   if(!email||!pwd){err.textContent='Preencha email e senha.';err.style.display='block';return;}
   btn.innerHTML='<span class="spin"></span> Entrando...';btn.disabled=true;
   try{
-    // Direct REST API call — 100% reliable, independent of JS client state
+    // Direct REST API call Ã¢â‚¬â€ 100% reliable, independent of JS client state
     const resp=await fetch(SB_URL+'/auth/v1/token?grant_type=password',{
       method:'POST',
       headers:{'Content-Type':'application/json','apikey':SB_KEY},
@@ -1023,7 +1023,7 @@ async function doLogout(){await db.auth.signOut();window.location.reload();}
 
 // =================== SETTINGS (legacy compat) ===================
 async function loadSettings(){
-  // Settings vêm do shop — já carregado no init
+  // Settings vÃƒÂªm do shop Ã¢â‚¬â€ jÃƒÂ¡ carregado no init
   // Nada a fazer aqui, mantido por compatibilidade
 }
 function applySettings(data){
@@ -1033,11 +1033,11 @@ function applySettings(data){
   setTxt('sp-name',n);
   const sa=document.getElementById('sp-addr');if(sa)sa.innerHTML=n+(a?'<br>'+a:'');
   setTxt('h-name',n);
-  if(a){setTxt('h-addr','📍 '+a);}
+  if(a){setTxt('h-addr','Ã°Å¸â€œÂ '+a);}
   const open=(data.opening_time||'09:00').slice(0,5);
   const close=(data.closing_time||'20:00').slice(0,5);
-  setTxt('h-sched','🕐 '+open+' as '+close);
-  setTxt('h-hours','Aberto · Fecha as '+close);
+  setTxt('h-sched','Ã°Å¸â€¢Â '+open+' as '+close);
+  setTxt('h-hours','Aberto Ã‚Â· Fecha as '+close);
   const pk=document.getElementById('pix-key-disp');if(pk&&data.pix_key)pk.textContent=data.pix_key;
   if(data.instagram){const ib=document.getElementById('btn-ig');if(ib)ib.onclick=()=>window.open('https://instagram.com/'+data.instagram.replace('@',''),'_blank');}
 }
@@ -1056,13 +1056,13 @@ async function loadSvcs(){
 }
 function useFallbackSvcs(){
   if(S.svcs.length){renderSvcGrid();return;}
-  // IDs prefixados com 'tmp-' para o carrinho funcionar — NÃO são UUIDs válidos
+  // IDs prefixados com 'tmp-' para o carrinho funcionar Ã¢â‚¬â€ NÃƒÆ’O sÃƒÂ£o UUIDs vÃƒÂ¡lidos
   S.svcs=[
-    {id:'tmp-1',name:'Corte Degradê',price:45,duration_minutes:40,category:'Cortes'},
+    {id:'tmp-1',name:'Corte DegradÃƒÂª',price:45,duration_minutes:40,category:'Cortes'},
     {id:'tmp-2',name:'Barba Completa',price:35,duration_minutes:30,category:'Barba'},
     {id:'tmp-3',name:'Corte + Barba',price:70,duration_minutes:60,category:'Combos'},
     {id:'tmp-4',name:'Pezinho',price:20,duration_minutes:15,category:'Cortes'},
-    {id:'tmp-5',name:'Hidratação',price:30,duration_minutes:30,category:'Tratamentos'},
+    {id:'tmp-5',name:'HidrataÃƒÂ§ÃƒÂ£o',price:30,duration_minutes:30,category:'Tratamentos'},
     {id:'tmp-6',name:'Sobrancelha',price:15,duration_minutes:15,category:'Tratamentos'},
   ];
   renderSvcGrid();
@@ -1076,19 +1076,21 @@ function renderSvcGrid(){
     const key=s.id||('idx-'+i);
     const inCart=S.cart.some(c=>(c.id&&c.id===s.id)||(c._idx===i));
     return`<div onclick="toggleCart(${i})" style="background:var(--dk3);border:1.5px solid ${inCart?'var(--gold)':'var(--dk4)'};border-radius:var(--r);padding:14px;cursor:pointer;transition:all .2s;${inCart?'background:rgba(155,89,182,.08)':''}">
-      ${s.image_url?'<div style="position:relative;display:inline-block;margin-bottom:8px"><img src="'+s.image_url+'" style="width:60px;height:60px;object-fit:cover;border-radius:10px"><div class="img-expand-btn" data-url="'+s.image_url+'" style="position:absolute;bottom:2px;right:2px;background:rgba(155,89,182,.85);width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;cursor:pointer;color:#fff">&#x26F6;</div></div>':'<div class="'+catCls(s.category)+'" style="margin-bottom:8px">'+icLabel(s.category)+'</div>'}
+      ${s.image_url?'<div style="position:relative;display:inline-block;margin-bottom:'+(inCart?'4':'8')+'px"><img src="'+s.image_url+'" class="svc-photo" style="width:'+(inCart?'100':'60')+'px;height:'+(inCart?'100':'60')+'px;object-fit:cover;border-radius:10px">'+(inCart?'':'<div class="img-expand-btn" data-url="'+s.image_url+'" style="position:absolute;bottom:2px;right:2px;background:rgba(155,89,182,.85);width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;cursor:pointer;color:#fff">&#x26F6;</div>')+'</div>'+(inCart?'<div style="font-size:9px;color:#9B59B6;margin-bottom:6px">toque na foto para ampliar</div>':''):'<div class="'+catCls(s.category)+'" style="margin-bottom:8px">'+icLabel(s.category)+'</div>'}
       <div style="font-size:14px;font-weight:600;color:var(--tx)">${s.name}</div>
       <div style="font-size:16px;font-weight:700;color:var(--gold);margin-top:4px">${fmt(s.price)}</div>
       <div style="font-size:11px;color:var(--txm);margin-top:2px">${s.duration_minutes} min</div>
-      ${inCart?'<div style="font-size:11px;color:var(--gold);font-weight:700;margin-top:6px">✓ Adicionado</div>':''}
+      ${inCart?'<div style="font-size:11px;color:var(--gold);font-weight:700;margin-top:6px">Ã¢Å“â€œ Adicionado</div>':''}
     </div>`;
   }).join('');
 }
 
 function toggleCart(idx){
+  // Skip if click came from svc-photo on selected card
+  if(event&&event.target&&event.target.classList&&event.target.classList.contains('svc-photo')&&event.target.style.width==='100px'){openImgLightbox(event.target.src);return;}
   // Skip if click came from lightbox expand button
   if(event&&event.target&&(event.target.classList.contains("img-expand-btn")||event.target.closest(".img-expand-btn"))){var _url=event.target.getAttribute("data-url")||event.target.closest(".img-expand-btn").getAttribute("data-url");if(_url)openImgLightbox(_url);return;}
-  // idx é o índice do array S.svcs
+  // idx ÃƒÂ© o ÃƒÂ­ndice do array S.svcs
   const svc=S.svcs[idx];if(!svc)return;
   const svcWithIdx={...svc,_idx:idx};
   const cartIdx=S.cart.findIndex(c=>c._idx===idx);
@@ -1106,10 +1108,10 @@ function renderCart(){
   box.style.display='block';
   items.innerHTML=S.cart.map(s=>`
     <div class="cart-item">
-      <span style="font-size:13px">${s.name}</span>
+      <span style="font-size:13px">${s.name}</span>${s.image_url?'<img src="'+s.image_url+'" onclick="event.stopPropagation();openImgLightbox(this.src)" style="width:36px;height:36px;object-fit:cover;border-radius:6px;cursor:zoom-in;margin-left:8px">':''}
       <div style="display:flex;align-items:center;gap:8px">
         <span style="color:var(--gold);font-weight:700;font-size:13px">${fmt(s.price)}</span>
-        <button class="cart-rm" onclick="toggleCart(${s._idx});event.stopPropagation()">✕</button>
+        <button class="cart-rm" onclick="toggleCart(${s._idx});event.stopPropagation()">Ã¢Å“â€¢</button>
       </div>
     </div>`).join('');
   const t=S.cart.reduce((s,c)=>s+Number(c.price),0);
@@ -1148,9 +1150,9 @@ async function loadBarbers(){
 function useFallbackBarbers(){
   if(S.barbers.length){renderBarberGrid();return;}
   S.barbers=[
-    {id:'tmp-b1',name:'Marcos',specialty:'Degradê & Barba',rating:4.9,reviews_count:142,avatar_emoji:'👤'},
-    {id:'tmp-b2',name:'Rafael',specialty:'Clássico & Social',rating:4.8,reviews_count:89,avatar_emoji:'👤'},
-    {id:'tmp-b3',name:'João',specialty:'Navalhado & Barba',rating:4.7,reviews_count:56,avatar_emoji:'👤'},
+    {id:'tmp-b1',name:'Marcos',specialty:'DegradÃƒÂª & Barba',rating:4.9,reviews_count:142,avatar_emoji:'Ã°Å¸â€˜Â¤'},
+    {id:'tmp-b2',name:'Rafael',specialty:'ClÃƒÂ¡ssico & Social',rating:4.8,reviews_count:89,avatar_emoji:'Ã°Å¸â€˜Â¤'},
+    {id:'tmp-b3',name:'JoÃƒÂ£o',specialty:'Navalhado & Barba',rating:4.7,reviews_count:56,avatar_emoji:'Ã°Å¸â€˜Â¤'},
   ];
   renderBarberGrid();
 }
@@ -1158,16 +1160,16 @@ function renderBarberGrid(){
   const g=document.getElementById('barber-grid');if(!g)return;
   g.innerHTML=S.barbers.map(b=>`
     <div onclick="selBarber(this,'${b.name}','${b.id}')" style="background:var(--dk3);border:1.5px solid var(--dk4);border-radius:var(--r);padding:16px;cursor:pointer;text-align:center;transition:all .2s" id="bc-${b.id}">
-      <div style="width:64px;height:64px;border-radius:50%;background:var(--dk4);border:2px solid var(--dk5);margin:0 auto 10px;display:flex;align-items:center;justify-content:center;font-size:24px;transition:border-color .2s">${b.avatar_emoji||'👤'}</div>
+      <div style="width:64px;height:64px;border-radius:50%;background:var(--dk4);border:2px solid var(--dk5);margin:0 auto 10px;display:flex;align-items:center;justify-content:center;font-size:24px;transition:border-color .2s">${b.avatar_emoji||'Ã°Å¸â€˜Â¤'}</div>
       <div style="font-size:14px;font-weight:600">${b.name}</div>
-      <div style="font-size:11px;color:var(--gold);margin-top:3px">⭐ ${b.rating} (${b.reviews_count})</div>
+      <div style="font-size:11px;color:var(--gold);margin-top:3px">Ã¢Â­Â ${b.rating} (${b.reviews_count})</div>
       <div style="font-size:11px;color:var(--txm);margin-top:2px">${b.specialty||''}</div>
     </div>`).join('');}
 function selBarber(card,name,id){
   document.querySelectorAll('#barber-grid > div').forEach(c=>{c.style.borderColor='var(--dk4)';c.style.background='var(--dk3)';});
   card.style.borderColor='var(--gold)';card.style.background='rgba(155,89,182,.08)';
   S.selectedBarber=name;
-  // Só salva o id se for UUID válido
+  // SÃƒÂ³ salva o id se for UUID vÃƒÂ¡lido
   const isUUID=v=>/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(v||'');
   S.selectedBarberId=isUUID(id)?id:null;
   const btn=document.getElementById('btn-bk2');if(btn){btn.disabled=false;btn.style.opacity='1';}
@@ -1183,7 +1185,7 @@ async function loadPromos(){
     if(!data||!data.length){c.innerHTML='<div style="padding:0 20px 12px;color:var(--txm);font-size:13px">Sem promocoes no momento.</div>';return;}
     c.innerHTML=data.map(p=>`
       <div class="promo-card" onclick="showC('agendar')">
-        <div style="font-size:32px">${p.emoji||'🔥'}</div>
+        <div style="font-size:32px">${p.emoji||'Ã°Å¸â€Â¥'}</div>
         <div>
           <div style="font-size:15px;font-weight:600">${p.name}</div>
           <div style="font-size:12px;color:var(--txm);margin-top:2px">${p.description||''}</div>
@@ -1206,7 +1208,7 @@ async function loadPkgs(){
       <div class="pkg${p.badge?'  best':''}" onclick="_pkgClick(this)" data-pid="${p.id}">
         <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;margin-bottom:10px">${p.name}</div>
         <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:12px">
-          ${(Array.isArray(p.items)?p.items:((p.items||"").match(/^\d+$/)?[p.description||""]:(p.items||"").split("\n").filter(x=>x.trim()))).map(i=>`<div style="font-size:12px;color:var(--txm);display:flex;gap:6px;align-items:center"><span style="color:var(--grn);font-weight:700">✓</span>${i}</div>`).join('')}
+          ${(Array.isArray(p.items)?p.items:((p.items||"").match(/^\d+$/)?[p.description||""]:(p.items||"").split("\n").filter(x=>x.trim()))).map(i=>`<div style="font-size:12px;color:var(--txm);display:flex;gap:6px;align-items:center"><span style="color:var(--grn);font-weight:700">Ã¢Å“â€œ</span>${i}</div>`).join('')}
         </div>
         <div style="display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid var(--dk4)">
           <div>
@@ -1285,30 +1287,30 @@ function renderTimes(){
   const lsM=lunchStart?toMin(lunchStart):null;
   const leM=lunchEnd  ?toMin(lunchEnd)  :null;
 
-  // Gera todos os slots dentro do horário de funcionamento
+  // Gera todos os slots dentro do horÃƒÂ¡rio de funcionamento
   const slots=[];
   let cur=openM;
   while(cur+totalDur<=closeM){
-    // Bloqueia horário de almoço: qualquer slot que COMECE dentro do almoço
-    // ou que INVADA o início do almoço
+    // Bloqueia horÃƒÂ¡rio de almoÃƒÂ§o: qualquer slot que COMECE dentro do almoÃƒÂ§o
+    // ou que INVADA o inÃƒÂ­cio do almoÃƒÂ§o
     const isLunch=lsM!==null&&leM!==null&&(cur<leM&&cur+totalDur>lsM);
     slots.push({time:toStr(cur),lunch:isLunch});
     cur+=slotMin;
   }
 
   if(!slots.length){
-    g.innerHTML='<div style="grid-column:span 4;color:var(--txm);font-size:13px;padding:10px">Sem horários disponíveis.</div>';
+    g.innerHTML='<div style="grid-column:span 4;color:var(--txm);font-size:13px;padding:10px">Sem horÃƒÂ¡rios disponÃƒÂ­veis.</div>';
     return;
   }
 
-  // Agrupa por período (manhã / tarde) se houver almoço
+  // Agrupa por perÃƒÂ­odo (manhÃƒÂ£ / tarde) se houver almoÃƒÂ§o
   let html='';
   if(lsM&&leM){
     const manha=slots.filter(s=>toMin(s.time)<lsM);
     const tarde=slots.filter(s=>toMin(s.time)>=leM);
-    if(manha.length){html+=`<div style="grid-column:span 4;font-size:11px;font-weight:700;color:var(--gold);letter-spacing:1px;padding:4px 0 6px;text-transform:uppercase">☀ Manhã</div>`+manha.map(s=>slotBtn(s,totalDur)).join('');}
-    html+=`<div style="grid-column:span 4;font-size:11px;color:var(--txm);padding:6px 0 4px;display:flex;align-items:center;gap:8px"><div style="flex:1;height:1px;background:var(--dk4)"></div>🍽 Almoço ${lunchStart}–${lunchEnd}<div style="flex:1;height:1px;background:var(--dk4)"></div></div>`;
-    if(tarde.length){html+=`<div style="grid-column:span 4;font-size:11px;font-weight:700;color:var(--gold);letter-spacing:1px;padding:4px 0 6px;text-transform:uppercase">🌤 Tarde</div>`+tarde.map(s=>slotBtn(s,totalDur)).join('');}
+    if(manha.length){html+=`<div style="grid-column:span 4;font-size:11px;font-weight:700;color:var(--gold);letter-spacing:1px;padding:4px 0 6px;text-transform:uppercase">Ã¢Ëœâ‚¬ ManhÃƒÂ£</div>`+manha.map(s=>slotBtn(s,totalDur)).join('');}
+    html+=`<div style="grid-column:span 4;font-size:11px;color:var(--txm);padding:6px 0 4px;display:flex;align-items:center;gap:8px"><div style="flex:1;height:1px;background:var(--dk4)"></div>Ã°Å¸ÂÂ½ AlmoÃƒÂ§o ${lunchStart}Ã¢â‚¬â€œ${lunchEnd}<div style="flex:1;height:1px;background:var(--dk4)"></div></div>`;
+    if(tarde.length){html+=`<div style="grid-column:span 4;font-size:11px;font-weight:700;color:var(--gold);letter-spacing:1px;padding:4px 0 6px;text-transform:uppercase">Ã°Å¸Å’Â¤ Tarde</div>`+tarde.map(s=>slotBtn(s,totalDur)).join('');}
   } else {
     html=slots.map(s=>slotBtn(s,totalDur)).join('');
   }
@@ -1318,7 +1320,7 @@ function slotBtn(s,dur){
   const busy=s.lunch||isConflict(s.time,dur,S.busySlots);
   const sel=S.selTime===s.time;
   const lunchCls=s.lunch?' lunch':'';
-  return`<div class="ts${busy?' busy':''}${sel?' sel':''}${lunchCls}" ${!busy?`onclick="selTime(this,'${s.time}')"`:'title="Horário de almoço"'}>${s.time}${s.lunch?' 🍽':''}</div>`;
+  return`<div class="ts${busy?' busy':''}${sel?' sel':''}${lunchCls}" ${!busy?`onclick="selTime(this,'${s.time}')"`:'title="HorÃƒÂ¡rio de almoÃƒÂ§o"'}>${s.time}${s.lunch?' Ã°Å¸ÂÂ½':''}</div>`;
 }
 function selTime(el,t){
   document.querySelectorAll('.ts').forEach(x=>x.classList.remove('sel'));
@@ -1350,7 +1352,7 @@ function goStepUI(step){
   [1,2,3,4].forEach(i=>{
     const d=document.getElementById('sd'+i);if(!d)return;
     d.classList.remove('active','done');
-    if(i<step){d.classList.add('done');d.textContent='✓';}
+    if(i<step){d.classList.add('done');d.textContent='Ã¢Å“â€œ';}
     else if(i===step){d.classList.add('active');d.textContent=i;}
     else d.textContent=i;
     if(i<4){const l=document.getElementById('sl'+i);if(l)l.classList.toggle('done',i<step);}
@@ -1362,9 +1364,9 @@ function renderSummary(){
   const dur=S.cart.reduce((s,c)=>s+Number(c.duration_minutes),0);
   el.innerHTML=`
     <div class="sr"><span class="srl">Servicos</span><span class="srv">${S.cart.map(c=>c.name).join(', ')}</span></div>
-    <div class="sr"><span class="srl">Profissional</span><span class="srv">${S.selectedBarber||'—'}</span></div>
-    <div class="sr"><span class="srl">Data</span><span class="srv">${S.selDate||'—'}</span></div>
-    <div class="sr"><span class="srl">Horario</span><span class="srv">${S.selTime||'—'}</span></div>
+    <div class="sr"><span class="srl">Profissional</span><span class="srv">${S.selectedBarber||'Ã¢â‚¬â€'}</span></div>
+    <div class="sr"><span class="srl">Data</span><span class="srv">${S.selDate||'Ã¢â‚¬â€'}</span></div>
+    <div class="sr"><span class="srl">Horario</span><span class="srv">${S.selTime||'Ã¢â‚¬â€'}</span></div>
     <div class="sr"><span class="srl">Duracao</span><span class="srv">${dur} min</span></div>
     <div class="sr"><span class="srl">Total</span><span class="srv" style="color:var(--gold);font-size:20px">${fmt(total)}</span></div>`;
 }
@@ -1433,32 +1435,32 @@ async function confirmPay(method){
 function notifyAdmin(a){
   const num=(S.shop.whatsapp||S.settings.whatsapp||'5511999999999').replace(/\D/g,'');
   const svcs=a.services_json?a.services_json.map(s=>s.name).join(' + '):a.service_name;
-  // Formata data em português: 2026-06-03 → 03/06/2026
+  // Formata data em portuguÃƒÂªs: 2026-06-03 Ã¢â€ â€™ 03/06/2026
   const dateParts=(a.appointment_date||'').split('-');
   const dataFmt=dateParts.length===3?`${dateParts[2]}/${dateParts[1]}/${dateParts[0]}`:a.appointment_date;
-  // Formata horário: 18:30:00 → 18:30
+  // Formata horÃƒÂ¡rio: 18:30:00 Ã¢â€ â€™ 18:30
   const hora=(a.appointment_time||'').slice(0,5);
   // Traduz forma de pagamento
-  const pagMap={pix:'PIX 💲',credito:'Cartão de Crédito 💳',debito:'Cartão de Débito 🏦',local:'Pagar no Local 💵'};
-  const pagamento=pagMap[a.payment_method]||a.payment_method||'—';
+  const pagMap={pix:'PIX Ã°Å¸â€™Â²',credito:'CartÃƒÂ£o de CrÃƒÂ©dito Ã°Å¸â€™Â³',debito:'CartÃƒÂ£o de DÃƒÂ©bito Ã°Å¸ÂÂ¦',local:'Pagar no Local Ã°Å¸â€™Âµ'};
+  const pagamento=pagMap[a.payment_method]||a.payment_method||'Ã¢â‚¬â€';
   // Monta a mensagem
   const shopName=S.shop.name||'ManiPro';
   const msg=
-`🔔 *Novo Agendamento — ${shopName}*
-━━━━━━━━━━━━━━━━━━━━
-👤 *Cliente:* ${a.client_name}
-📱 *WhatsApp:* ${a.client_phone||'Não informado'}
-💅 *Serviço:* ${svcs}
-💅 *Profissional:* ${a.barber_name}
-━━━━━━━━━━━━━━━━━━━━
-📅 *Data:* ${dataFmt}
-🕐 *Horário:* ${hora}
-⏱ *Duração:* ${a.total_duration_minutes||30} min
-━━━━━━━━━━━━━━━━━━━━
-💰 *Total:* ${fmt(a.service_price)}
-💳 *Pagamento:* ${pagamento}
-━━━━━━━━━━━━━━━━━━━━
-_Enviado pelo ManiPro_ 💅`;
+`Ã°Å¸â€â€ *Novo Agendamento Ã¢â‚¬â€ ${shopName}*
+Ã¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€Â
+Ã°Å¸â€˜Â¤ *Cliente:* ${a.client_name}
+Ã°Å¸â€œÂ± *WhatsApp:* ${a.client_phone||'NÃƒÂ£o informado'}
+Ã°Å¸â€™â€¦ *ServiÃƒÂ§o:* ${svcs}
+Ã°Å¸â€™â€¦ *Profissional:* ${a.barber_name}
+Ã¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€Â
+Ã°Å¸â€œâ€¦ *Data:* ${dataFmt}
+Ã°Å¸â€¢Â *HorÃƒÂ¡rio:* ${hora}
+Ã¢ÂÂ± *DuraÃƒÂ§ÃƒÂ£o:* ${a.total_duration_minutes||30} min
+Ã¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€Â
+Ã°Å¸â€™Â° *Total:* ${fmt(a.service_price)}
+Ã°Å¸â€™Â³ *Pagamento:* ${pagamento}
+Ã¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€Â
+_Enviado pelo ManiPro_ Ã°Å¸â€™â€¦`;
   var _a=document.createElement('a');_a.href='https://wa.me/'+num+'?text='+encodeURIComponent(msg);_a.target='_blank';_a.rel='noopener';document.body.appendChild(_a);_a.click();document.body.removeChild(_a);
 }
 function shareWA(){
@@ -1469,15 +1471,15 @@ function shareWA(){
   const hora=(a.appointment_time||'').slice(0,5);
   const shopName=S.shop.name||'ManiPro';
   const msg=
-`✅ *Agendamento Confirmado!*
-━━━━━━━━━━━━━━━━━━
-💅 *Serviço:* ${a.service_name||''}
-💅 *Profissional:* ${a.barber_name||''}
-📅 *Data:* ${dataFmt}
-🕐 *Horário:* ${hora}
-💰 *Total:* ${fmt(a.service_price||0)}
-━━━━━━━━━━━━━━━━━━
-_${shopName} • ManiPro_ 📲`;
+`Ã¢Å“â€¦ *Agendamento Confirmado!*
+Ã¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€Â
+Ã°Å¸â€™â€¦ *ServiÃƒÂ§o:* ${a.service_name||''}
+Ã°Å¸â€™â€¦ *Profissional:* ${a.barber_name||''}
+Ã°Å¸â€œâ€¦ *Data:* ${dataFmt}
+Ã°Å¸â€¢Â *HorÃƒÂ¡rio:* ${hora}
+Ã°Å¸â€™Â° *Total:* ${fmt(a.service_price||0)}
+Ã¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€ÂÃ¢â€Â
+_${shopName} Ã¢â‚¬Â¢ ManiPro_ Ã°Å¸â€œÂ²`;
   var _a=document.createElement('a');_a.href='https://wa.me/'+num+'?text='+encodeURIComponent(msg);_a.target='_blank';_a.rel='noopener';document.body.appendChild(_a);_a.click();document.body.removeChild(_a);
 }
 function openWA(){
@@ -1503,7 +1505,7 @@ async function loadMyAppts(){
         <div><div style="font-weight:700;font-size:15px">${a.service_name}</div><div style="font-size:12px;color:var(--txm)">com ${a.barber_name}</div></div>
         <span style="font-size:9px;padding:2px 5px;border-radius:4px;margin-right:6px;font-weight:700;${a.reminder_sent?'background:#27AE60;color:#fff':'background:rgba(155,89,182,.2);color:#9B59B6'}">${a.reminder_sent?'LEMBRADO':'PENDENTE'}</span><span class="badge ${sl[a.status]||'bp'}">${st[a.status]||'Pendente'}</span>
       </div>
-      <div style="font-size:12px;color:var(--txm)">📅 ${new Date(a.appointment_date+'T12:00').toLocaleDateString('pt-BR')} as ${(a.appointment_time||'').slice(0,5)} · ${fmt(a.service_price)}</div>
+      <div style="font-size:12px;color:var(--txm)">Ã°Å¸â€œâ€¦ ${new Date(a.appointment_date+'T12:00').toLocaleDateString('pt-BR')} as ${(a.appointment_time||'').slice(0,5)} Ã‚Â· ${fmt(a.service_price)}</div>
     </div>`).join('');
 }
 
@@ -1560,7 +1562,7 @@ function agItemHTML(a){
   return`<div class="ai" data-id="${a.id}" onclick="openApptMod('${a.id}')">
     <div class="at"><div class="ath">${h}</div><div class="atm">:${m}</div></div>
     <div class="al${hasAct?' g':''}"></div>
-    <div class="aif"><div class="aic">${a.client_name}${pkgLabel}</div><div class="ais">${a.service_name} · ${fmt(a.service_price)}</div><div class="aib">💅 ${a.barber_name} · ${new Date(a.appointment_date+'T12:00').toLocaleDateString('pt-BR')}</div></div>
+    <div class="aif"><div class="aic">${a.client_name}${pkgLabel}</div><div class="ais">${a.service_name} Ã‚Â· ${fmt(a.service_price)}</div><div class="aib">Ã°Å¸â€™â€¦ ${a.barber_name} Ã‚Â· ${new Date(a.appointment_date+'T12:00').toLocaleDateString('pt-BR')}</div></div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px"><span class="badge ${sl[a.status]||'bp'}">${st[a.status]||'Pendente'}</span><span style="font-size:8px;padding:1px 5px;border-radius:3px;font-weight:700;${a.reminder_sent?'background:#27AE60;color:#fff':'background:rgba(155,89,182,.15);color:#9B59B6'}">${a.reminder_sent?'LEMBRADO':'PENDENTE'}</span></div>
   </div>`;
 }
@@ -1576,20 +1578,20 @@ async function openApptMod(id){
   document.getElementById('mod-appt-body').innerHTML=`
     <div class="card" style="margin-bottom:16px">
       <div class="sr"><span class="srl">Cliente</span><span class="srv">${a.client_name}</span></div>
-      <div class="sr"><span class="srl">WhatsApp</span><span class="srv">${a.client_phone||'—'}</span></div>
+      <div class="sr"><span class="srl">WhatsApp</span><span class="srv">${a.client_phone||'Ã¢â‚¬â€'}</span></div>
       <div class="sr"><span class="srl">Servico</span><span class="srv">${a.service_name}</span></div>
       <div class="sr"><span class="srl">Profissional</span><span class="srv"><select id="appt-barber-sel" data-appt-id="${a.id}" style="background:var(--dk3);color:var(--tx);border:1px solid var(--dk4);border-radius:8px;padding:4px 8px;font-size:13px;font-family:inherit"></select> <button onclick="saveApptBarber()" style="background:var(--gold);color:#0E0E0E;border:none;border-radius:6px;padding:4px 10px;font-size:11px;font-weight:700;cursor:pointer;margin-left:4px">Salvar</button></span></div>
       <div class="sr"><span class="srl">Data</span><span class="srv">${new Date(a.appointment_date+'T12:00').toLocaleDateString('pt-BR')}</span></div>
       <div class="sr"><span class="srl">Horario</span><span class="srv">${t}</span></div>
-      <div class="sr"><span class="srl">Pagamento</span><span class="srv">${a.payment_method||'—'}</span></div>
+      <div class="sr"><span class="srl">Pagamento</span><span class="srv">${a.payment_method||'Ã¢â‚¬â€'}</span></div>
       <div class="sr"><span class="srl">Total</span><span class="srv" style="color:var(--gold);font-size:18px">${fmt(a.service_price)}</span></div>
     </div>
     <div style="display:flex;flex-direction:column;gap:8px">
-      <button class="btn btn-gold" onclick="updAppt('${a.id}','confirmed')">✅ Confirmar</button>
-      <button class="btn btn-grn" onclick="updAppt('${a.id}','done')">🏁 Marcar como Feito</button>
-      ${S.role!=='barber'?'<button class="btn" onclick="encerrarAppt(\''+a.id+'\',\''+a.barber_id+'\')" style="background:#8E44AD;color:#fff;border:none;border-radius:50px;padding:12px;font-size:14px;font-weight:700;cursor:pointer;width:100%">🔒 Encerrar (gerar comissao)</button>':''}
+      <button class="btn btn-gold" onclick="updAppt('${a.id}','confirmed')">Ã¢Å“â€¦ Confirmar</button>
+      <button class="btn btn-grn" onclick="updAppt('${a.id}','done')">Ã°Å¸ÂÂ Marcar como Feito</button>
+      ${S.role!=='barber'?'<button class="btn" onclick="encerrarAppt(\''+a.id+'\',\''+a.barber_id+'\')" style="background:#8E44AD;color:#fff;border:none;border-radius:50px;padding:12px;font-size:14px;font-weight:700;cursor:pointer;width:100%">Ã°Å¸â€â€™ Encerrar (gerar comissao)</button>':''}
       ${pkgSessions.length>1?`<div style="background:rgba(155,89,182,.08);border:1px solid rgba(155,89,182,.3);border-radius:var(--rs);padding:12px;margin-bottom:12px"><div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:8px">PACOTE ${pkgSessions.length} SESSOES</div>${pkgSessions.map(s=>('<div style="font-size:12px;padding:4px 0;display:flex;justify-content:space-between"><span style=color:var(--txm)>Sessao '+s.package_session_num+'</span><span>'+new Date(s.appointment_date+'T12:00').toLocaleDateString('pt-BR')+' '+s.appointment_time.slice(0,5)+'</span><span style=color:var(--gold)>'+(s.status==='done'?'Feito':s.status==='cancelled'?'Cancelado':'Pendente')+'</span></div>')).join('')}</div>`:''}
-      ${a.client_phone?`<button class="btn btn-out" onclick="window.open('https://wa.me/${a.client_phone.replace(/\D/g,'')}','_blank')">💬 WhatsApp do cliente</button>`:''}
+      ${a.client_phone?`<button class="btn btn-out" onclick="window.open('https://wa.me/${a.client_phone.replace(/\D/g,'')}','_blank')">Ã°Å¸â€™Â¬ WhatsApp do cliente</button>`:''}
       <button class="btn-red" onclick="updAppt('${a.id}','cancelled')">Cancelar agendamento</button>
       ${S.role!=="barber"?'<div style="display:flex;gap:8px;margin-top:8px"><button onclick="editApptModal(\x27'+a.id+'\x27)" style="flex:1;background:var(--dk3);border:1px solid var(--dk4);color:var(--gold);border-radius:50px;padding:10px;font-size:13px;cursor:pointer">\u270F Editar</button><button onclick="deleteAppt(\x27'+a.id+'\x27)" style="flex:1;background:rgba(192,57,43,.1);border:1px solid #E74C3C;color:#E74C3C;border-radius:50px;padding:10px;font-size:13px;cursor:pointer">\u{1F5D1} Excluir</button></div>':''}
     </div>`;
@@ -1647,12 +1649,12 @@ async function openPromoMod(id){
   var el=document.getElementById('mod-promo');
   if(!el){
     el=document.createElement('div');el.className='mov';el.id='mod-promo';
-    el.innerHTML='<div class="msh"><div class="mhd"></div><div class="mt" id="prm-title">Nova Promocao</div><div class="fg"><label class="fl">Nome *</label><input class="fi" id="prm-name" placeholder="Ex: Combo Corte + Barba"></div><div class="fg"><label class="fl">Descricao</label><input class="fi" id="prm-desc" placeholder="Descricao da promo"></div><div class="fg"><label class="fl">Emoji</label><input class="fi" id="prm-emoji" placeholder="Ex: 🔥" value="🔥"></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div class="fg"><label class="fl">Preco original</label><input class="fi" id="prm-orig" type="text" inputmode="decimal" placeholder="0"></div><div class="fg"><label class="fl">Preco promo *</label><input class="fi" id="prm-price" type="text" inputmode="decimal" placeholder="0"></div></div><input type="hidden" id="prm-edit-id" value=""><button class="btn" onclick="savePromo()" style="width:100%;margin-top:12px">Salvar promocao</button></div>';
+    el.innerHTML='<div class="msh"><div class="mhd"></div><div class="mt" id="prm-title">Nova Promocao</div><div class="fg"><label class="fl">Nome *</label><input class="fi" id="prm-name" placeholder="Ex: Combo Corte + Barba"></div><div class="fg"><label class="fl">Descricao</label><input class="fi" id="prm-desc" placeholder="Descricao da promo"></div><div class="fg"><label class="fl">Emoji</label><input class="fi" id="prm-emoji" placeholder="Ex: Ã°Å¸â€Â¥" value="Ã°Å¸â€Â¥"></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div class="fg"><label class="fl">Preco original</label><input class="fi" id="prm-orig" type="text" inputmode="decimal" placeholder="0"></div><div class="fg"><label class="fl">Preco promo *</label><input class="fi" id="prm-price" type="text" inputmode="decimal" placeholder="0"></div></div><input type="hidden" id="prm-edit-id" value=""><button class="btn" onclick="savePromo()" style="width:100%;margin-top:12px">Salvar promocao</button></div>';
     document.body.appendChild(el);
   }
   document.getElementById('prm-name').value='';
   document.getElementById('prm-desc').value='';
-  document.getElementById('prm-emoji').value='🔥';
+  document.getElementById('prm-emoji').value='Ã°Å¸â€Â¥';
   document.getElementById('prm-orig').value='';
   document.getElementById('prm-price').value='';
   document.getElementById('prm-edit-id').value='';
@@ -1746,7 +1748,7 @@ async function openAdmBook(){
       db.from('services').select('id,name,price,duration_minutes').eq('shop_id',S.shopId).eq('active',true).order('name'),
       db.from('barbers').select('id,name').eq('shop_id',S.shopId).eq('active',true).order('name')
     ]);
-    ds.innerHTML=(svcs||[]).map(s=>`<option value="${s.id}|${s.name}|${s.price}|${s.duration_minutes}">${s.name} — ${fmt(s.price)}</option>`).join('');
+    ds.innerHTML=(svcs||[]).map(s=>`<option value="${s.id}|${s.name}|${s.price}|${s.duration_minutes}">${s.name} Ã¢â‚¬â€ ${fmt(s.price)}</option>`).join('');
     db2.innerHTML=(barbers||[]).map(b=>`<option value="${b.id}|${b.name}">${b.name}</option>`).join('');
   }catch(e){
     ds.innerHTML='<option value="|Servico">Erro ao carregar servicos</option>';
@@ -1791,11 +1793,11 @@ async function loadAdmSvcs(){
       <div class="${catCls(s.category)}" style="width:40px;height:40px;border-radius:10px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:#fff">${icLabel(s.category)}</div>
       <div style="flex:1">
         <div style="font-size:15px;font-weight:600">${s.name}</div>
-        <div style="font-size:12px;color:var(--txm)">${fmt(s.price)} · ${s.duration_minutes} min · ${s.category}</div>
+        <div style="font-size:12px;color:var(--txm)">${fmt(s.price)} Ã‚Â· ${s.duration_minutes} min Ã‚Â· ${s.category}</div>
       </div>
       <div class="tog${s.active?' on':''}" onclick="togSvc('${s.id}',${s.active})"></div>
       <button onclick="openSvcMod('${s.id}')" style="background:var(--dk3);border:1px solid var(--dk4);color:var(--tx);border-radius:var(--rs);padding:6px 12px;font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif">Editar</button>
-      <button onclick="delSvc('${s.id}')" style="background:rgba(192,57,43,.15);border:1px solid var(--red);color:var(--red);border-radius:var(--rs);padding:6px 10px;font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif">✕</button>
+      <button onclick="delSvc('${s.id}')" style="background:rgba(192,57,43,.15);border:1px solid var(--red);color:var(--red);border-radius:var(--rs);padding:6px 10px;font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif">Ã¢Å“â€¢</button>
     </div>`).join('');
 }
 function openSvcMod(id){
@@ -1833,12 +1835,12 @@ async function loadAdmPkgs(){
     <div style="display:flex;align-items:center;gap:14px;padding:14px 20px;border-bottom:1px solid var(--dk3)">
       <div style="flex:1">
         <div style="font-size:15px;font-weight:600">${p.name}${p.badge?` <span style="background:var(--gold);color:var(--dk);font-size:9px;font-weight:800;border-radius:4px;padding:2px 6px">${p.badge}</span>`:''}</div>
-        <div style="font-size:12px;color:var(--txm)">${fmt(p.price)} · ${(p.items||[]).length} itens</div>
+        <div style="font-size:12px;color:var(--txm)">${fmt(p.price)} Ã‚Â· ${(p.items||[]).length} itens</div>
         ${p.frequencia?"<div style=margin-top:3px><span style=background:rgba(155,89,182,.15);color:var(--gold);border-radius:4px;padding:2px_7px;font-size:11px;font-weight:600>"+p.frequencia+"</span> <span style=background:var(--dk4);color:var(--txm);border-radius:4px;padding:2px_6px;font-size:10px>"+(p.validade||"")+"</span></div>":""}
       </div>
       <div class="tog${p.active?' on':''}" onclick="togPkg('${p.id}',${p.active})"></div>
       <button onclick="openPkgMod('${p.id}')" style="background:var(--dk3);border:1px solid var(--dk4);color:var(--tx);border-radius:var(--rs);padding:6px 12px;font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif">Editar</button>
-      <button onclick="delPkg('${p.id}')" style="background:rgba(192,57,43,.15);border:1px solid var(--red);color:var(--red);border-radius:var(--rs);padding:6px 10px;font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif">✕</button>
+      <button onclick="delPkg('${p.id}')" style="background:rgba(192,57,43,.15);border:1px solid var(--red);color:var(--red);border-radius:var(--rs);padding:6px 10px;font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif">Ã¢Å“â€¢</button>
     </div>`).join('');
 }
 function openPkgMod(id){
@@ -1879,7 +1881,7 @@ async function saveSettings(){
   const{error}=await db.from('shops').update(updates).eq('id',S.shopId);
   if(error){toast('Erro: '+error.message,'err');return;}
   Object.assign(S.shop,updates);applyShop(S.shop);
-  toast('Configurações salvas!','ok');
+  toast('ConfiguraÃƒÂ§ÃƒÂµes salvas!','ok');
 }
 async function loadCfgForm(){
   const d=S.shop;
@@ -1925,7 +1927,7 @@ async function addBarber(){
   const name=prompt('Nome do profissional:');if(!name)return;
   const spec=prompt('Especialidade:');
   const comm=Number(prompt('Comissao % (0-100):'))||0;
-  const{error}=await db.from('barbers').insert({shop_id:S.shopId,name,specialty:spec||'',avatar_emoji:'👤',rating:5.0,reviews_count:0,active:true,commission_pct:comm});
+  const{error}=await db.from('barbers').insert({shop_id:S.shopId,name,specialty:spec||'',avatar_emoji:'Ã°Å¸â€˜Â¤',rating:5.0,reviews_count:0,active:true,commission_pct:comm});
   if(error){toast('Erro: '+error.message,'err');return;}
   toast('Profissional adicionado!','ok');setTimeout(function(){window.location.reload();},500);
 }
@@ -1994,7 +1996,7 @@ async function saveSvc(){
     }
   }
   if(error){toast('Erro: '+error.message,'err');return;}
-  toast('Serviço salvo!','ok');closeMod('mod-svc');loadAdmSvcs();loadSvcs();
+  toast('ServiÃƒÂ§o salvo!','ok');closeMod('mod-svc');loadAdmSvcs();loadSvcs();
 }
 async function savePkg(){
   const name=document.getElementById('pm-name').value.trim();
@@ -2004,7 +2006,7 @@ async function savePkg(){
   const desc=document.getElementById('pm-desc').value.trim();
   const badge=document.getElementById('pm-badge').value.trim();
   const eid=document.getElementById('pm-id').value;
-  if(!name||isNaN(price)||price<=0){toast('Preencha nome e preço.','err');return;}
+  if(!name||isNaN(price)||price<=0){toast('Preencha nome e preÃƒÂ§o.','err');return;}
   const freq=document.getElementById('pm-freq').value;
   const valid=document.getElementById('pm-valid').value;
   const payload={name,price,original_price:orig?parseFloat(orig.replace(/[^0-9.,]/g,'').replace(',','.')):null,items,description:desc,badge:badge||null,frequencia:freq||null,validade:valid||null,active:true,shop_id:S.shopId};
@@ -2032,20 +2034,20 @@ async function savePkg(){
 }
 
 async function setDefaultShop(){
-  if(!S.shopId){toast('Nenhuma salão carregada.','err');return;}
+  if(!S.shopId){toast('Nenhuma salÃƒÂ£o carregada.','err');return;}
   // Remove default from all, set on current
   await db.from('shops').update({is_default:false}).neq('id',S.shopId);
   await db.from('shops').update({is_default:true}).eq('id',S.shopId);
-  toast('✅ Esta salão agora é a padrão do link principal!','ok');
+  toast('Ã¢Å“â€¦ Esta salÃƒÂ£o agora ÃƒÂ© a padrÃƒÂ£o do link principal!','ok');
 }
 function autoSlug(inp){
-  const slug=inp.value.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+  const slug=inp.value.toLowerCase().normalize('NFD').replace(/[ÃŒâ‚¬-ÃÂ¯]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const el=document.getElementById('ob-slug');if(el)el.value=slug;
   const prev=document.getElementById('slug-preview');if(prev)prev.textContent='app.manipro.click?s='+slug;
 }
 function copyShareLink(){
   const link=document.getElementById('cfg-share-link')?.textContent||'';
-  if(!link||link==='Carregando...'){toast('Link não disponível ainda.','err');return;}
+  if(!link||link==='Carregando...'){toast('Link nÃƒÂ£o disponÃƒÂ­vel ainda.','err');return;}
   navigator.clipboard.writeText(link).then(()=>toast('Link copiado!','ok')).catch(()=>toast('Link: '+link));
 }
 // =================== ONBOARDING ===================
@@ -2056,16 +2058,16 @@ async function saveOnboarding(){
   const btn=document.getElementById('btn-ob');btn.disabled=true;btn.textContent='Criando...';
   try{
     const{data:{session}}=await db.auth.getSession();
-    if(!session){toast('Sessão expirada. Faça login novamente.','err');enterApp('adm-login');return;}
+    if(!session){toast('SessÃƒÂ£o expirada. FaÃƒÂ§a login novamente.','err');enterApp('adm-login');return;}
     // Check slug availability
     const{data:existing}=await db.from('shops').select('id').eq('slug',slug).maybeSingle();
-    if(existing){toast('Identificador já em uso. Escolha outro.','err');btn.disabled=false;btn.textContent='Criar minha salão';return;}
+    if(existing){toast('Identificador jÃƒÂ¡ em uso. Escolha outro.','err');btn.disabled=false;btn.textContent='Criar minha salÃƒÂ£o';return;}
     const{data:shop,error}=await db.from('shops').insert({
       owner_id:session.user.id,name,slug,
       address:g('ob-addr'),whatsapp:g('ob-wa'),pix_key:g('ob-pix'),
       opening_time:'09:00',closing_time:'20:00',active:true
     }).select().single();
-    if(error){toast('Erro: '+error.message,'err');btn.disabled=false;btn.textContent='Criar minha salão';return;}
+    if(error){toast('Erro: '+error.message,'err');btn.disabled=false;btn.textContent='Criar minha salÃƒÂ£o';return;}
     S.shop=shop;S.shopId=shop.id;S.shopSlug=shop.slug;
     applyShop(shop);
     // Criar servicos padrao
@@ -2083,10 +2085,10 @@ async function saveOnboarding(){
     await db.from('promotions').insert([
       {name:'Corte Degrade',type:'Semanal',original_price:40,promo_price:35,active:true,shop_id:shop.id}
     ]);
-    toast('Salão criada com sucesso!','ok');
+    toast('SalÃƒÂ£o criada com sucesso!','ok');
     enterApp('admin');
   }catch(e){toast('Erro inesperado: '+e.message,'err');}
-  btn.disabled=false;btn.textContent='Criar minha salão';
+  btn.disabled=false;btn.textContent='Criar minha salÃƒÂ£o';
 }
 
 // =================== SET PASSWORD (primeiro acesso) ===================
@@ -2096,12 +2098,12 @@ async function setNewPassword(){
   const err  = document.getElementById('sp-err');
   const btn  = document.getElementById('btn-sp');
   err.style.display='none';
-  if(pwd.length<8){err.textContent='A senha deve ter no mínimo 8 caracteres.';err.style.display='block';return;}
-  if(pwd!==pwd2){err.textContent='As senhas não coincidem.';err.style.display='block';return;}
+  if(pwd.length<8){err.textContent='A senha deve ter no mÃƒÂ­nimo 8 caracteres.';err.style.display='block';return;}
+  if(pwd!==pwd2){err.textContent='As senhas nÃƒÂ£o coincidem.';err.style.display='block';return;}
   btn.innerHTML='<span class="spin"></span> Salvando...';btn.disabled=true;
   try{
     const{error}=await db.auth.updateUser({password:pwd});
-    btn.textContent='Criar senha e entrar →';btn.disabled=false;
+    btn.textContent='Criar senha e entrar Ã¢â€ â€™';btn.disabled=false;
     if(error){err.textContent='Erro: '+error.message;err.style.display='block';return;}
     toast('Senha criada com sucesso!','ok');
     await db.auth.refreshSession();
@@ -2121,7 +2123,7 @@ async function setNewPassword(){
         }else{enterApp('onboarding');}
       }
     }
-  }catch(e){btn.textContent='Criar senha e entrar →';btn.disabled=false;err.textContent='Erro inesperado.';err.style.display='block';}
+  }catch(e){btn.textContent='Criar senha e entrar Ã¢â€ â€™';btn.disabled=false;err.textContent='Erro inesperado.';err.style.display='block';}
 }
 
 async function inviteClient(){
@@ -2132,7 +2134,7 @@ async function inviteClient(){
   const btn=document.getElementById('inv-btn');
   err.style.display='none';ok.style.display='none';
   if(!name){err.textContent='Informe o nome do cliente.';err.style.display='block';return;}
-  if(!email||!email.includes('@')){err.textContent='Informe um e-mail válido.';err.style.display='block';return;}
+  if(!email||!email.includes('@')){err.textContent='Informe um e-mail vÃƒÂ¡lido.';err.style.display='block';return;}
   btn.innerHTML='<span class="spin"></span> Enviando...';btn.disabled=true;
   try{
     const res=await fetch('https://zheqdrblwlhvzxrdaifo.supabase.co/functions/v1/hotmart-webhook',{
@@ -2146,12 +2148,12 @@ async function inviteClient(){
       document.getElementById('inv-name').value='';
       document.getElementById('inv-email').value='';
     } else if(data.msg==='user already exists'||data.message&&data.message.includes('already')){
-      err.textContent='Este e-mail já possui acesso ao ManiPro.';err.style.display='block';
+      err.textContent='Este e-mail jÃƒÂ¡ possui acesso ao ManiPro.';err.style.display='block';
     } else {
       err.textContent='Erro ao enviar convite: '+(data.error||'tente novamente');err.style.display='block';
     }
-  }catch(e){err.textContent='Erro de conexão.';err.style.display='block';}
-  btn.textContent='Enviar convite →';btn.disabled=false;
+  }catch(e){err.textContent='Erro de conexÃƒÂ£o.';err.style.display='block';}
+  btn.textContent='Enviar convite Ã¢â€ â€™';btn.disabled=false;
 }
 
 
@@ -2212,20 +2214,20 @@ function filterClientes(){
 function renderClientes(items){
   var el=document.getElementById("cli-list");
   if(!items.length){el.innerHTML="<div style='text-align:center;padding:30px;color:var(--txm)'>Nenhum cliente.</div>";return;}
-  // Agrupar por salão
+  // Agrupar por salÃƒÂ£o
   var groups={};
   items.forEach(function(c){
-    var shopName=(c.shop&&c.shop.name)||"Sem salão";
+    var shopName=(c.shop&&c.shop.name)||"Sem salÃƒÂ£o";
     if(!groups[shopName])groups[shopName]={users:[],shopSlug:(c.shop&&c.shop.slug)||""};
     groups[shopName].users.push(c);
   });
   var html="";
-  var sortedGroups=Object.keys(groups).sort(function(a,b){if(a==="Sem salão")return 1;if(b==="Sem salão")return -1;return a.localeCompare(b);});
+  var sortedGroups=Object.keys(groups).sort(function(a,b){if(a==="Sem salÃƒÂ£o")return 1;if(b==="Sem salÃƒÂ£o")return -1;return a.localeCompare(b);});
   sortedGroups.forEach(function(shopName){
     var g=groups[shopName];
     html+='<div style="margin-bottom:16px">';
     html+='<div style="padding:12px 20px;background:var(--dk2);border-bottom:2px solid var(--gold);display:flex;align-items:center;gap:10px">';
-    html+='<span style="font-size:16px">'+(shopName==="Sem salão"?"\u{1F464}":"\u{1F4CD}")+'</span>';
+    html+='<span style="font-size:16px">'+(shopName==="Sem salÃƒÂ£o"?"\u{1F464}":"\u{1F4CD}")+'</span>';
     html+='<div><div style="font-weight:700;font-size:14px;color:var(--gold)">'+shopName+'</div>';
     html+='<div style="font-size:11px;color:var(--txm)">'+g.users.length+' usuario'+(g.users.length>1?'s':'')+'</div></div>';
     html+='</div>';
@@ -2300,12 +2302,12 @@ async function deleteCliente(uid){
       var sess=await db.auth.getSession();
       var tk=sess.data.session?sess.data.session.access_token:'';
       await fetch("https://zheqdrblwlhvzxrdaifo.supabase.co/functions/v1/admin-clientes",{method:"POST",headers:{"Content-Type":"application/json","Authorization":"Bearer "+tk},body:JSON.stringify({action:"delete",user_id:uid})});
-      toast("Cliente e salão excluidos!","ok");
+      toast("Cliente e salÃƒÂ£o excluidos!","ok");
     }catch(e){toast("Erro: "+e.message,"err");}
   } else if(action==='PAUSAR'){
     try{
       await db.from('shops').update({active:false}).eq('owner_id',uid);
-      toast("Acesso pausado! A salão foi desativada.","ok");
+      toast("Acesso pausado! A salÃƒÂ£o foi desativada.","ok");
     }catch(e){toast("Erro: "+e.message,"err");}
   } else {
     toast("Acao cancelada.","err");return;
@@ -2384,24 +2386,24 @@ async function deleteCliente(uid){
     if(n){const e=document.getElementById('prf-name');if(e)e.value=n;}
     if(p){const e=document.getElementById('prf-phone');if(e)e.value=p;const f=document.getElementById('my-ph');if(f)f.value=p;}
 
-    // 3. Carregar salão: por slug da URL ou salão padrão
+    // 3. Carregar salÃƒÂ£o: por slug da URL ou salÃƒÂ£o padrÃƒÂ£o
     if(S.shopSlug){
-      // URL tem ?s=slug — carrega essa salão específica
+      // URL tem ?s=slug Ã¢â‚¬â€ carrega essa salÃƒÂ£o especÃƒÂ­fica
       await loadShop(S.shopSlug, false);
     } else {
-      // Sem slug na URL — carrega a salão marcada como padrão (modo demo)
+      // Sem slug na URL Ã¢â‚¬â€ carrega a salÃƒÂ£o marcada como padrÃƒÂ£o (modo demo)
       try{
         const{data,error}=await db.from('shops').select('*').eq('is_default',true).eq('active',true).single();
         if(!error&&data){
           S.shop=data; S.shopId=data.id; S.shopSlug=data.slug;
           applyShop(data);
-          // Mostra banner SaaS pois está em modo demo (sem ?s= na URL)
+          // Mostra banner SaaS pois estÃƒÂ¡ em modo demo (sem ?s= na URL)
           S.isDemoMode=true;
         }
-      }catch(e){ console.warn('Erro ao carregar salão padrão:',e); }
+      }catch(e){ console.warn('Erro ao carregar salÃƒÂ£o padrÃƒÂ£o:',e); }
     }
 
-    // 4. Checar sessão existente
+    // 4. Checar sessÃƒÂ£o existente
     try{
       const{data:{session}}=await db.auth.getSession();
       if(session){
@@ -2441,13 +2443,13 @@ window.toggleBlockSlot = function(el){
   else{el.style.background='var(--dk3)';el.style.borderColor='var(--dk4)';el.style.color='var(--tx)';}
   var count=document.querySelectorAll('.blk-selected').length;
   var countEl=document.getElementById('blk-count');
-  if(countEl)countEl.textContent=count>0?count+' horário(s) selecionado(s)':'';
+  if(countEl)countEl.textContent=count>0?count+' horÃƒÂ¡rio(s) selecionado(s)':'';
 };
 window.saveBlock = async function(){
   var d=document.getElementById('blk-date').value;
   if(!d){toast('Selecione a data.','err');return;}
   var selected=document.querySelectorAll('.blk-selected');
-  if(!selected.length){toast('Selecione pelo menos um horário.','err');return;}
+  if(!selected.length){toast('Selecione pelo menos um horÃƒÂ¡rio.','err');return;}
   var reason=document.getElementById('blk-reason').value.trim();
   var slot=Number((S.shop||S.settings||{}).slot_duration)||30;
   var inserts=[];
@@ -2460,7 +2462,7 @@ window.saveBlock = async function(){
   });
   var{error}=await db.from('blocked_slots').insert(inserts);
   if(error){toast('Erro: '+error.message,'err');return;}
-  toast(inserts.length+' horário(s) bloqueado(s)!','ok');
+  toast(inserts.length+' horÃƒÂ¡rio(s) bloqueado(s)!','ok');
   closeMod('mod-block');
   loadBlockedSlots();
 };
@@ -2469,10 +2471,10 @@ window.loadBlockedSlots = async function(){
   if(!el||!S.shopId)return;
   var today=new Date().toISOString().split('T')[0];
   var{data,error}=await db.from('blocked_slots').select('*').eq('shop_id',S.shopId).gte('block_date',today).order('block_date').order('start_time');
-  if(error||!data||!data.length){el.innerHTML='<div style="color:var(--txm);font-size:13px;padding:8px 0">Nenhum horário bloqueado.</div>';return;}
+  if(error||!data||!data.length){el.innerHTML='<div style="color:var(--txm);font-size:13px;padding:8px 0">Nenhum horÃƒÂ¡rio bloqueado.</div>';return;}
   el.innerHTML=data.map(function(b){
     var dt=new Date(b.block_date+'T12:00').toLocaleDateString('pt-BR',{day:'2-digit',month:'short'});
-    return '<div style="display:flex;justify-content:space-between;align-items:center;padding:10px;background:var(--dk2);border:1px solid var(--dk4);border-radius:8px;margin-bottom:6px"><div><div style="font-weight:600;font-size:13px">'+dt+' — '+b.start_time.slice(0,5)+' às '+b.end_time.slice(0,5)+'</div>'+(b.reason?'<div style="font-size:11px;color:var(--txm)">'+b.reason+'</div>':'')+'</div><button onclick="removeBlock(\''+b.id+'\') " style="background:rgba(231,76,60,.15);color:var(--red);border:1px solid var(--red);border-radius:50px;padding:4px 10px;font-size:11px;cursor:pointer;font-weight:600">Remover</button></div>';
+    return '<div style="display:flex;justify-content:space-between;align-items:center;padding:10px;background:var(--dk2);border:1px solid var(--dk4);border-radius:8px;margin-bottom:6px"><div><div style="font-weight:600;font-size:13px">'+dt+' Ã¢â‚¬â€ '+b.start_time.slice(0,5)+' ÃƒÂ s '+b.end_time.slice(0,5)+'</div>'+(b.reason?'<div style="font-size:11px;color:var(--txm)">'+b.reason+'</div>':'')+'</div><button onclick="removeBlock(\''+b.id+'\') " style="background:rgba(231,76,60,.15);color:var(--red);border:1px solid var(--red);border-radius:50px;padding:4px 10px;font-size:11px;cursor:pointer;font-weight:600">Remover</button></div>';
   }).join('');
 };
 window.removeBlock = async function(id){
@@ -2811,6 +2813,16 @@ function openImgLightbox(url){
   ov.style.display='flex';
   setTimeout(function(){ov.style.opacity='1'},10);
 }
+
+// Lightbox: tap photo on selected service card to enlarge
+document.addEventListener('click', function(e) {
+  if (e.target.tagName === 'IMG' && e.target.classList.contains('svc-photo') && e.target.style.width === '100px') {
+    e.stopImmediatePropagation();
+    e.stopPropagation();
+    e.preventDefault();
+    openImgLightbox(e.target.src);
+  }
+}, true);
 
 </script>
 </body>

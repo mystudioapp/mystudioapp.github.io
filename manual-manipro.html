@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManiPro - Manual do Usuário</title>
+    <style>
+        @page {
+            size: A4 landscape;
+            margin: 1.5cm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            color: #2c3e50;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .page {
+            width: 297mm;
+            min-height: 210mm;
+            max-height: 210mm;
+            padding: 1.5cm;
+            page-break-after: always;
+            position: relative;
+            overflow: hidden;
+            background: white;
+        }
+
+        .page:last-child {
+            page-break-after: auto;
+        }
+
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #9B59B6;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        .page-header span {
+            color: #9B59B6;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .page-number {
+            color: #7f8c8d;
+            font-size: 11px;
+        }
+
+        h1 {
+            color: #9B59B6;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #9B59B6;
+            font-size: 20px;
+            margin-bottom: 12px;
+            border-left: 4px solid #9B59B6;
+            padding-left: 10px;
+        }
+
+        h3 {
+            color: #6c3483;
+            font-size: 16px;
+            margin-bottom: 8px;
+            margin-top: 12px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        ol {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        ol li {
+            margin-bottom: 5px;
+        }
+
+        .highlight {
+            background: #f4ecf7;
+            border-left: 3px solid #9B59B6;
+            padding: 8px 12px;
+            margin: 10px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .three-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+
+        .card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 12px;
+            border-top: 3px solid #9B59B6;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 14px;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+
+        .step-number {
+            background: #9B59B6;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .cover {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+        }
+
+        .cover-logo {
+            font-size: 64px;
+            color: #9B59B6;
+            margin-bottom: 10px;
+        }
+
+        .cover-title {
+            font-size: 48px;
+            color: #9B59B6;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .cover-subtitle {
+            font-size: 24px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .cover-desc {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .cover-url {
+            font-size: 14px;
+            color: #9B59B6;
+            background: #f4ecf7;
+            padding: 8px 20px;
+            border-radius: 20px;
+        }
+
+        .status-flow {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .status-pending { background: #ffeaa7; color: #6c5ce7; }
+        .status-confirmed { background: #81ecec; color: #00b894; }
+        .status-done { background: #a29bfe; color: white; }
+        .status-closed { background: #636e72; color: white; }
+
+        .arrow { color: #9B59B6; font-weight: bold; }
+
+        .tip {
+            background: #e8f8f5;
+            border-left: 3px solid #1abc9c;
+            padding: 8px 12px;
+            margin: 8px 0;
+            border-radius: 0 4px 4px 0;
+            font-size: 13px;
+        }
+
+        .warning {
+            background: #fef9e7;
+            border-left: 3px solid #f39c12;
+            padding: 8px 12px;
+            margin: 8px 0;
+            border-radius: 0 4px 4px 0;
+            font-size: 13px;
+        }
+
+        .index-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .index-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dotted #ddd;
+            font-size: 15px;
+        }
+
+        .index-list li span:last-child {
+            color: #9B59B6;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<!-- PAGE 1: CAPA -->
+<div class="page">
+    <div class="cover">
+        <div class="cover-logo">💅</div>
+        <div class="cover-title">ManiPro</div>
+        <div class="cover-subtitle">Manual do Usuário</div>
+        <div class="cover-desc">Sistema de Gestão para Salões de Manicure e Pedicure</div>
+        <div class="cover-url">🌐 maniproapp.github.io</div>
+    </div>
+</div>
+
+<!-- PAGE 2: ÍNDICE -->
+<div class="page">
+    <div class="page-header">
+        <span>ManiPro - Manual do Usuário</span>
+        <span class="page-number">Página 2</span>
+    </div>
+    <h1>📋 Índice</h1>
+    <ul class="index-list">
+        <li><span>1. Capa</span><span>1</span></li>
+        <li><span>2. Índice</span><span>2</span></li>
+        <li><span>3. Primeiros Passos - Proprietário</span><span>3</span></li>
+        <li><span>4. Dashboard</span><span>4</span></li>
+        <li><span>5. Agenda</span><span>5</span></li>
+        <li><span>6. Serviços</span><span>6</span></li>
+        <li><span>7. Pacotes e Promoções</span><span>7</span></li>
+        <li><span>8. Profissionais (Equipe)</span><span>8</span></li>
+        <li><span>9. Configurações</span><span>9</span></li>
+        <li><span>10. Convidar Clientes</span><span>10</span></li>
+        <li><span>11. Guia do Cliente - Agendar</span><span>11</span></li>
+        <li><span>12. Guia do Cliente - Meus Agendamentos</span><span>12</span></li>
+        <li><span>13. Guia do Cliente - Perfil</span><span>13</span></li>
+        <li><span>14. Dicas e Suporte</span><span>14</span></li>
+    </ul>
+</div>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>ManiPro - Designer de Unhas</title>
+<title>MyStudio - Designer de Unhas</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" crossorigin="anonymous"></script>
 <style>
@@ -134,8 +134,8 @@ html,body{overscroll-behavior-y:none;}
 <!-- SPLASH -->
 <div id="splash" class="screen active">
   <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;padding:40px">
-    <img src="logo-icon.png" alt="ManiPro" style="width:220px;height:220px;border-radius:20px;margin-bottom:20px;object-fit:cover">
-    <div style="font-family:'Playfair Display',serif;font-size:52px;font-weight:900;color:var(--gold);letter-spacing:-1px">ManiPro</div>
+    <img src="logo-icon.png" alt="MyStudio" style="width:220px;height:220px;border-radius:20px;margin-bottom:20px;object-fit:cover">
+    <div style="font-family:'Playfair Display',serif;font-size:52px;font-weight:900;color:var(--gold);letter-spacing:-1px">MyStudio</div>
     <div style="font-size:15px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin:8px 0 50px;font-weight:600" id="sp-name">Estilo & Precisao</div>
     <button class="btn btn-gold" onclick="enterApp('client')" style="max-width:320px">Agendar Agora</button>
     <button class="btn btn-out" onclick="enterApp('adm-login')" style="max-width:320px">Area do Proprietario</button>
@@ -146,7 +146,7 @@ html,body{overscroll-behavior-y:none;}
 <!-- ADMIN LOGIN -->
 <div id="adm-login" class="screen">
   <div class="lbox">
-    <div class="llogo">💅 ManiPro</div>
+    <div class="llogo">💅 MyStudio</div>
     <div class="lsub">Painel Admin</div>
     <div class="errbox" id="lerr"></div>
     <div class="fg"><label class="fl">E-mail</label><input class="fi" type="email" id="lemail" placeholder="seu@email.com" autocomplete="email"></div>
@@ -167,10 +167,10 @@ html,body{overscroll-behavior-y:none;}
 <div id="set-password" class="screen">
   <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;padding:40px 24px">
     <div style="width:100%;max-width:380px">
-      <div style="font-family:'Playfair Display',serif;font-size:36px;font-weight:900;color:var(--gold);text-align:center">💅 ManiPro</div>
+      <div style="font-family:'Playfair Display',serif;font-size:36px;font-weight:900;color:var(--gold);text-align:center">💅 MyStudio</div>
       <div style="font-size:11px;color:var(--txm);text-align:center;letter-spacing:3px;text-transform:uppercase;margin:4px 0 32px">Primeiro Acesso</div>
       <div style="background:rgba(155,89,182,.1);border:1px solid rgba(155,89,182,.3);border-radius:var(--r);padding:14px;margin-bottom:24px;font-size:13px;color:var(--gold);line-height:1.6;text-align:center">
-        🎉 Bem-vindo ao ManiPro!<br>Crie sua senha para continuar.
+        🎉 Bem-vindo ao MyStudio!<br>Crie sua senha para continuar.
       </div>
       <div class="errbox" id="sp-err"></div>
       <div class="fg"><label class="fl">Nova senha</label><input class="fi" type="password" id="sp-pwd" placeholder="Mínimo 8 caracteres"></div>
@@ -183,17 +183,17 @@ html,body{overscroll-behavior-y:none;}
 <!-- ONBOARDING — tela de configuração inicial para novos assinantes -->
 <div id="onboarding" class="screen">
   <div style="display:flex;flex-direction:column;align-items:center;padding:40px 24px;overflow-y:auto;flex:1;max-width:480px;margin:0 auto;width:100%">
-    <div style="font-family:'Playfair Display',serif;font-size:32px;font-weight:900;color:var(--gold);text-align:center;margin-bottom:4px">💅 ManiPro</div>
+    <div style="font-family:'Playfair Display',serif;font-size:32px;font-weight:900;color:var(--gold);text-align:center;margin-bottom:4px">💅 MyStudio</div>
     <div style="font-size:13px;color:var(--txm);text-align:center;margin-bottom:32px">Vamos configurar sua salão!</div>
     <div style="width:100%">
       <div style="background:rgba(155,89,182,.1);border:1px solid rgba(155,89,182,.3);border-radius:var(--r);padding:14px;margin-bottom:24px;font-size:13px;color:var(--gold);line-height:1.6">
-        👋 Bem-vindo ao ManiPro! Preencha os dados abaixo para criar sua área exclusiva. Isso leva menos de 2 minutos.
+        👋 Bem-vindo ao MyStudio! Preencha os dados abaixo para criar sua área exclusiva. Isso leva menos de 2 minutos.
       </div>
       <div class="fg"><label class="fl">Nome da sua salão *</label><input class="fi" id="ob-name" placeholder="Ex: Salão do João" oninput="autoSlug(this)"></div>
       <div class="fg">
         <label class="fl">Identificador único (link) *</label>
         <input class="fi" id="ob-slug" placeholder="ex: salão-joao" style="font-family:monospace">
-        <div style="font-size:11px;color:var(--txm);margin-top:6px">Seu link será: <span id="slug-preview" style="color:var(--gold)">app.manipro.click?s=...</span></div>
+        <div style="font-size:11px;color:var(--txm);margin-top:6px">Seu link será: <span id="slug-preview" style="color:var(--gold)">app.mystudio.click?s=...</span></div>
       </div>
       <div class="fg"><label class="fl">Endereço</label><input class="fi" id="ob-addr" placeholder="Rua, número — Bairro, Cidade"></div>
       <div class="fg"><label class="fl">WhatsApp (com código do país)</label><input class="fi" id="ob-wa" placeholder="5511999999999" type="tel"></div>
@@ -206,7 +206,7 @@ html,body{overscroll-behavior-y:none;}
 
 <div id="planos" class="screen">
   <div style="display:flex;flex-direction:column;align-items:center;padding:40px 24px;overflow-y:auto;flex:1">
-    <div style="font-family:'Playfair Display',serif;font-size:36px;font-weight:900;color:var(--gold);text-align:center">💅 ManiPro</div>
+    <div style="font-family:'Playfair Display',serif;font-size:36px;font-weight:900;color:var(--gold);text-align:center">💅 MyStudio</div>
     <div style="font-size:13px;color:var(--txm);text-align:center;margin:8px 0 32px;line-height:1.6">Sistema completo de agendamento para sua salão.<br>Escolha o plano ideal:</div>
 
     <!-- PLANO MENSAL -->
@@ -250,7 +250,7 @@ html,body{overscroll-behavior-y:none;}
 <!-- CLIENT APP -->
 <div id="client-app" class="screen">
   <div class="hdr">
-    <div class="logo">💅 ManiPro</div>
+    <div class="logo">💅 MyStudio</div>
     <div style="display:flex;gap:10px">
       <div onclick="showC('meus')" style="background:var(--dk3);border:1px solid var(--dk5);width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer">📋</div>
       <div onclick="showC('perfil')" style="background:var(--dk3);border:1px solid var(--dk5);width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer">👤</div>
@@ -263,7 +263,7 @@ html,body{overscroll-behavior-y:none;}
       <div style="background:linear-gradient(160deg,var(--dk2),var(--dk));padding:28px 20px 24px;position:relative;overflow:hidden">
         <div style="position:absolute;right:-10px;top:10px;font-size:100px;opacity:.04">💅</div>
         <div style="font-size:13px;color:var(--txm)">Bem-vindo a</div>
-        <div style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700" id="h-name">ManiPro</div>
+        <div style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700" id="h-name">MyStudio</div>
         <div id="h-hours" style="display:inline-flex;align-items:center;background:rgba(155,89,182,.12);border:1px solid rgba(155,89,182,.3);color:var(--gold);padding:5px 12px;border-radius:50px;font-size:12px;margin-top:12px">Aberto agora</div>
       </div>
       <div class="sec-title">O que voce precisa?</div>
@@ -301,7 +301,7 @@ html,body{overscroll-behavior-y:none;}
           <div style="font-size:22px;margin-bottom:8px">💅</div>
           <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--gold);margin-bottom:6px">Gostou? Tenha o seu!</div>
           <div style="font-size:12px;color:var(--txm);line-height:1.6;margin-bottom:16px">
-            Este é o <strong style="color:var(--tx)">ManiPro</strong> — sistema completo de agendamento para salãos.<br>
+            Este é o <strong style="color:var(--tx)">MyStudio</strong> — sistema completo de agendamento para salãos.<br>
             Crie sua versão personalizada por apenas <strong style="color:var(--gold)">R$ 47/mês</strong>.
           </div>
           <button onclick="enterApp('planos')" style="background:var(--gold);color:var(--dk);border:none;border-radius:50px;padding:12px 28px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:14px;cursor:pointer;width:100%;margin-bottom:10px">
@@ -494,7 +494,7 @@ html,body{overscroll-behavior-y:none;}
 <!-- ADMIN APP -->
 <div id="admin-app" class="screen">
   <div class="hdr">
-    <div class="logo">⚙ ManiPro</div>
+    <div class="logo">⚙ MyStudio</div>
     <div style="display:flex;align-items:center;gap:10px">
       <span id="logged-user-name" style="font-size:12px;color:var(--gold);font-weight:600"></span>
       <button onclick="doLogout()" style="background:transparent;border:1px solid var(--dk5);color:var(--txm);border-radius:50px;padding:6px 14px;font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif">Sair</button>
@@ -567,7 +567,7 @@ html,body{overscroll-behavior-y:none;}
     <!-- CLIENTES (super admin only) -->
     <div id="as-clientes" style="display:none">
       <div style="padding:20px 20px 12px;display:flex;align-items:center;justify-content:space-between">
-        <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700">Clientes ManiPro</div>
+        <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700">Clientes MyStudio</div>
         <div style="font-size:11px;color:var(--txm)" id="cli-count"></div>
       </div>
       <div style="padding:0 20px 12px"><input class="fi" id="cli-search" placeholder="Buscar por nome ou e-mail..." oninput="filterClientes()" style="font-size:13px"></div>
@@ -626,7 +626,7 @@ html,body{overscroll-behavior-y:none;}
         <div class="fg" style="background:rgba(155,89,182,.08);border:1px solid rgba(155,89,182,.3);border-radius:var(--rs);padding:14px;margin-bottom:8px">
           <label class="fl" style="color:var(--gold)">🏠 Salão padrão do link principal</label>
           <div style="display:flex;align-items:center;justify-content:space-between">
-            <div style="font-size:13px;color:var(--txm)">Esta salão abre quando alguém acessa<br><strong style="color:var(--gold)">app.manipro.click</strong> sem o ?s=</div>
+            <div style="font-size:13px;color:var(--txm)">Esta salão abre quando alguém acessa<br><strong style="color:var(--gold)">app.mystudio.click</strong> sem o ?s=</div>
             <button onclick="setDefaultShop()" style="background:var(--gold);color:var(--dk);border:none;border-radius:50px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;margin-left:10px">Definir como padrão</button>
           </div>
         </div>
@@ -651,7 +651,7 @@ html,body{overscroll-behavior-y:none;}
         <button onclick="openBlockMod()" style="background:var(--gold);color:var(--dk);border:none;border-radius:50px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif">+ Bloquear</button>
       </div>
       <div id="blocked-list" style="padding:0 20px 16px"><div style="color:var(--txm);font-size:13px">Carregando...</div></div>
-      <div style="padding:20px 20px 12px;font-family:'Playfair Display',serif;font-size:18px;font-weight:700">🔗 Link da sua salão</div>
+      <div style="padding:20px 20px 12px;font-family:'Playfair Display',serif;font-size:18px;font-weight:700">🔗 Seu linkão</div>
       <div style="padding:0 20px 20px">
         <div style="background:var(--dk3);border:1px solid var(--gold);border-radius:var(--r);padding:16px">
           <div style="font-size:12px;color:var(--txm);margin-bottom:8px">Compartilhe este link com seus clientes:</div>
@@ -739,7 +739,7 @@ html,body{overscroll-behavior-y:none;}
     <div class="mt">Editar Cliente</div>
     <div class="fg"><label class="fl">Nome</label><input class="fi" id="edit-cli-name" placeholder="Nome completo" readonly style="opacity:.6"></div>
     <div class="fg"><label class="fl">E-mail</label><input class="fi" id="edit-cli-email" type="email" placeholder="novo@email.com"></div>
-    <div class="fg"><label class="fl">Plano</label><input class="fi" id="edit-cli-plan" placeholder="Ex: ManiPro Mensal" readonly style="opacity:.6"></div>
+    <div class="fg"><label class="fl">Plano</label><input class="fi" id="edit-cli-plan" placeholder="Ex: MyStudio Mensal" readonly style="opacity:.6"></div>
     <button class="btn btn-gold" id="btn-save-cli" onclick="saveEditCliente()">Salvar</button>
     <button class="btn btn-out" onclick="document.getElementById('mod-edit-cli').classList.remove('open')">Cancelar</button>
   </div>
@@ -886,7 +886,7 @@ function applyShop(d){
   const o=(d.opening_time||'09:00').slice(0,5), c=(d.closing_time||'20:00').slice(0,5);
   set('h-sched','🕐 '+o+' às '+c); set('h-hours','Aberto · Fecha às '+c);
   const pk=document.getElementById('pix-key-disp');if(pk&&d.pix_key)pk.textContent=d.pix_key;
-  document.title='ManiPro – '+d.name;
+  document.title='MyStudio – '+d.name;
   if(d.instagram){const ib=document.getElementById('btn-ig');if(ib)ib.onclick=()=>window.open('https://instagram.com/'+d.instagram.replace('@',''),'_blank');}
   // Set shop URL hint for sharing
   S.settings=d; // backward compat
@@ -909,7 +909,7 @@ function showC(sec){
   if(sec==='perfil')loadProfile();
 }
 function showA(sec){
-  try{localStorage.setItem("manipro_tab",sec);}catch(e){}
+  try{localStorage.setItem("mystudio_tab",sec);}catch(e){}
   document.querySelectorAll('[id^="as-"]').forEach(s=>s.style.display='none');
   const t=document.getElementById('as-'+sec);if(t)t.style.display='block';
   document.querySelectorAll('#admin-app .ni').forEach(n=>n.classList.remove('active'));
@@ -935,7 +935,7 @@ function showA(sec){
       if(hasShop){
         S.role='owner';
         enterApp('admin');
-        try{var _st=localStorage.getItem('manipro_tab');if(_st)setTimeout(function(){showA(_st);},500);}catch(e){}
+        try{var _st=localStorage.getItem('mystudio_tab');if(_st)setTimeout(function(){showA(_st);},500);}catch(e){}
         if(typeof updateLoggedName==='function')updateLoggedName(session.user.email);
       } else {
         var _bur=await db.from('barber_users').select('*').eq('user_id',uid);
@@ -1027,7 +1027,7 @@ async function loadSettings(){
   // Nada a fazer aqui, mantido por compatibilidade
 }
 function applySettings(data){
-  const n=data.shop_name||'ManiPro';
+  const n=data.shop_name||'MyStudio';
   const a=data.address||'';
   const setTxt=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
   setTxt('sp-name',n);
@@ -1476,7 +1476,7 @@ function notifyAdmin(a){
   const pagMap={pix:'PIX 💲',credito:'Cartão de Crédito 💳',debito:'Cartão de Débito 🏦',local:'Pagar no Local 💵'};
   const pagamento=pagMap[a.payment_method]||a.payment_method||'—';
   // Monta a mensagem
-  const shopName=S.shop.name||'ManiPro';
+  const shopName=S.shop.name||'MyStudio';
   const msg=
 `🔔 *Novo Agendamento — ${shopName}*
 ━━━━━━━━━━━━━━━━━━━━
@@ -1492,7 +1492,7 @@ function notifyAdmin(a){
 💰 *Total:* ${fmt(a.service_price)}
 💳 *Pagamento:* ${pagamento}
 ━━━━━━━━━━━━━━━━━━━━
-_Enviado pelo ManiPro_ 💅`;
+_Enviado pelo MyStudio_ 💅`;
   var _a=document.createElement('a');_a.href='https://wa.me/'+num+'?text='+encodeURIComponent(msg);_a.target='_blank';_a.rel='noopener';document.body.appendChild(_a);_a.click();document.body.removeChild(_a);
 }
 function shareWA(){
@@ -1501,7 +1501,7 @@ function shareWA(){
   const dateParts=(a.appointment_date||'').split('-');
   const dataFmt=dateParts.length===3?`${dateParts[2]}/${dateParts[1]}/${dateParts[0]}`:a.appointment_date;
   const hora=(a.appointment_time||'').slice(0,5);
-  const shopName=S.shop.name||'ManiPro';
+  const shopName=S.shop.name||'MyStudio';
   const msg=
 `✅ *Agendamento Confirmado!*
 ━━━━━━━━━━━━━━━━━━
@@ -1511,12 +1511,12 @@ function shareWA(){
 🕐 *Horário:* ${hora}
 💰 *Total:* ${fmt(a.service_price||0)}
 ━━━━━━━━━━━━━━━━━━
-_${shopName} • ManiPro_ 📲`;
+_${shopName} • MyStudio_ 📲`;
   var _a=document.createElement('a');_a.href='https://wa.me/'+num+'?text='+encodeURIComponent(msg);_a.target='_blank';_a.rel='noopener';document.body.appendChild(_a);_a.click();document.body.removeChild(_a);
 }
 function openWA(){
   const num=(S.settings.whatsapp||'5511999999999').replace(/\D/g,'');
-  const msg=encodeURIComponent('Ola! Vim pelo app ManiPro.');
+  const msg=encodeURIComponent('Ola! Vim pelo app MyStudio.');
   var _a=document.createElement('a');_a.href='https://wa.me/'+num+'?text='+msg;_a.target='_blank';_a.rel='noopener';document.body.appendChild(_a);_a.click();document.body.removeChild(_a);
 }
 function openPix(){openMod('mod-admbook');}
@@ -2075,7 +2075,7 @@ async function setDefaultShop(){
 function autoSlug(inp){
   const slug=inp.value.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const el=document.getElementById('ob-slug');if(el)el.value=slug;
-  const prev=document.getElementById('slug-preview');if(prev)prev.textContent='app.manipro.click?s='+slug;
+  const prev=document.getElementById('slug-preview');if(prev)prev.textContent='app.mystudio.click?s='+slug;
 }
 function copyShareLink(){
   const link=document.getElementById('cfg-share-link')?.textContent||'';
@@ -2172,7 +2172,7 @@ async function inviteClient(){
     const res=await fetch('https://zheqdrblwlhvzxrdaifo.supabase.co/functions/v1/hotmart-webhook',{
       method:'POST',
       headers:{'Content-Type':'application/json','x-hotmart-hottok':'wrvhDFedIx1NKWq9VAgqEHY7bpRrGO96d119cd-2281-4911-9275-e98843b69677'},
-      body:JSON.stringify({event:'PURCHASE_APPROVED',data:{buyer:{email,name},product:{name:'ManiPro (Convite Manual)'}}})
+      body:JSON.stringify({event:'PURCHASE_APPROVED',data:{buyer:{email,name},product:{name:'MyStudio (Convite Manual)'}}})
     });
     const data=await res.json();
     if(data.success||data.ok){
@@ -2180,7 +2180,7 @@ async function inviteClient(){
       document.getElementById('inv-name').value='';
       document.getElementById('inv-email').value='';
     } else if(data.msg==='user already exists'||data.message&&data.message.includes('already')){
-      err.textContent='Este e-mail já possui acesso ao ManiPro.';err.style.display='block';
+      err.textContent='Este e-mail já possui acesso ao MyStudio.';err.style.display='block';
     } else {
       err.textContent='Erro ao enviar convite: '+(data.error||'tente novamente');err.style.display='block';
     }
@@ -2208,8 +2208,8 @@ var comRows=Object.values(comByBarber).sort(function(a,b){return b.comissao-a.co
 if(comRows.length>0){comRows.push({"Profissional":"TOTAL","Comissao (%)":"","Atendimentos":doneAppts.length,"Faturado":fV(receitaMes),"Comissao (R$)":fV(totalComissoes),"Liquido":fV(lucroLiquido)});}
 // Aba Agendamentos detalhados
 var rows=ma.map(function(a){return{"Data":fD(a.appointment_date),"Hora":(a.appointment_time||"").slice(0,5),"Cliente":a.client_name||"","Telefone":a.client_phone||"","Servico":a.service_name||"","Profissional":a.barber_name||"","Valor":fV(a.service_price),"Valor Comissao":fV(Number(a.service_price||0)*(bm[a.barber_id]?bm[a.barber_id].pct:0)/100),"Valor Liquido":fV(Number(a.service_price||0)-(Number(a.service_price||0)*(bm[a.barber_id]?bm[a.barber_id].pct:0)/100)),"Pagamento":pP(a.payment_method),"Status":sP(a.status),"Ref Pacote":a.package_ref||"","Pacote":a.package_group_id?"Sim":"","Sessao":a.package_session_num||"","Total Sessoes":a.package_total_sessions||""};});
-var wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(resumo),"Resumo");XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(comRows),"Comissoes");XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(rows),"Agendamentos");XLSX.writeFile(wb,"Dashboard_ManiPro_"+mes+".xlsx");toast("Dashboard exportado!","ok");}catch(e){toast("Erro ao exportar.","err");}}
-async function exportAgenda(){try{var r=await db.from("appointments").select("*").eq("shop_id",S.shopId).order("appointment_date",{ascending:false}).order("appointment_time");var ap=r.data||[];var rB=await db.from("barbers").select("id,name,commission_pct").eq("shop_id",S.shopId);var _bm={};(rB.data||[]).forEach(function(b){_bm[b.id]={name:b.name,pct:Number(b.commission_pct)||0};});var fD=function(d){return d?new Date(d+"T00:00:00").toLocaleDateString("pt-BR"):"";};var fV=function(v){return "R$ "+Number(v||0).toLocaleString("pt-BR",{minimumFractionDigits:2});};var sP=function(s){return({pending:"Pendente",paid:"Pago",done:"Concluido",cancelled:"Cancelado",confirmed:"Confirmado",finished:"Encerrado"})[s]||s;};var pP=function(p){return({pix:"PIX",credito:"Cartao",local:"Local"})[p]||p||"";};var rows=ap.map(function(a){var pct=_bm[a.barber_id]?_bm[a.barber_id].pct:0;var val=Number(a.service_price||0);var comm=val*(pct/100);return{"Data":fD(a.appointment_date),"Hora":(a.appointment_time||"").slice(0,5),"Cliente":a.client_name||"","Telefone":a.client_phone||"","Servico":a.service_name||"","Profissional":a.barber_name||"","Valor":fV(val),"Valor Comissao":fV(comm),"Valor Liquido":fV(val-comm),"Pagamento":pP(a.payment_method),"Status":sP(a.status),"Ref Pacote":a.package_ref||"","Pacote":a.package_group_id?"Sim":"","Sessao":a.package_session_num||"","Total Sessoes":a.package_total_sessions||""};});var wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(rows),"Agenda");XLSX.writeFile(wb,"Agenda_ManiPro_"+new Date().toISOString().split("T")[0]+".xlsx");toast("Agenda exportada!","ok");}catch(e){toast("Erro ao exportar.","err");}}
+var wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(resumo),"Resumo");XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(comRows),"Comissoes");XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(rows),"Agendamentos");XLSX.writeFile(wb,"Dashboard_MyStudio_"+mes+".xlsx");toast("Dashboard exportado!","ok");}catch(e){toast("Erro ao exportar.","err");}}
+async function exportAgenda(){try{var r=await db.from("appointments").select("*").eq("shop_id",S.shopId).order("appointment_date",{ascending:false}).order("appointment_time");var ap=r.data||[];var rB=await db.from("barbers").select("id,name,commission_pct").eq("shop_id",S.shopId);var _bm={};(rB.data||[]).forEach(function(b){_bm[b.id]={name:b.name,pct:Number(b.commission_pct)||0};});var fD=function(d){return d?new Date(d+"T00:00:00").toLocaleDateString("pt-BR"):"";};var fV=function(v){return "R$ "+Number(v||0).toLocaleString("pt-BR",{minimumFractionDigits:2});};var sP=function(s){return({pending:"Pendente",paid:"Pago",done:"Concluido",cancelled:"Cancelado",confirmed:"Confirmado",finished:"Encerrado"})[s]||s;};var pP=function(p){return({pix:"PIX",credito:"Cartao",local:"Local"})[p]||p||"";};var rows=ap.map(function(a){var pct=_bm[a.barber_id]?_bm[a.barber_id].pct:0;var val=Number(a.service_price||0);var comm=val*(pct/100);return{"Data":fD(a.appointment_date),"Hora":(a.appointment_time||"").slice(0,5),"Cliente":a.client_name||"","Telefone":a.client_phone||"","Servico":a.service_name||"","Profissional":a.barber_name||"","Valor":fV(val),"Valor Comissao":fV(comm),"Valor Liquido":fV(val-comm),"Pagamento":pP(a.payment_method),"Status":sP(a.status),"Ref Pacote":a.package_ref||"","Pacote":a.package_group_id?"Sim":"","Sessao":a.package_session_num||"","Total Sessoes":a.package_total_sessions||""};});var wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(rows),"Agenda");XLSX.writeFile(wb,"Agenda_MyStudio_"+new Date().toISOString().split("T")[0]+".xlsx");toast("Agenda exportada!","ok");}catch(e){toast("Erro ao exportar.","err");}}
 var _allClientes=[];
 var _editUID=null;
 async function loadClientes(){
@@ -2440,7 +2440,7 @@ async function deleteCliente(uid){
       const{data:{session}}=await db.auth.getSession();
       if(session){
         const _autoShop=await loadShop(session.user.id,true);
-        if(_autoShop){S.role='owner';enterApp('admin');if(typeof updateLoggedName==='function')updateLoggedName(session.user.email);try{var _st=localStorage.getItem('manipro_tab');if(_st)setTimeout(function(){showA(_st);},500);}catch(e){}}
+        if(_autoShop){S.role='owner';enterApp('admin');if(typeof updateLoggedName==='function')updateLoggedName(session.user.email);try{var _st=localStorage.getItem('mystudio_tab');if(_st)setTimeout(function(){showA(_st);},500);}catch(e){}}
       }
     }catch(e){}
   }catch(e){console.warn('Init error',e);}
@@ -2737,7 +2737,7 @@ if(typeof window.openCreateBarberUser==='undefined'){
 
 </script>
 <script src="pkg_booking.js?v=4"></script>
-<script src="manipro-features.js?v=3">
+<script src="mystudio-features.js?v=3">
 
 // === SET PASSWORD FLOW ===
 (function(){
@@ -2754,7 +2754,7 @@ if(typeof window.openCreateBarberUser==='undefined'){
         overlay.style.cssText = 'position:fixed;inset:0;background:var(--bg,#1a1025);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px';
         overlay.innerHTML = '<div style="width:100%;max-width:400px;text-align:center">'
           + '<div style="font-size:48px;margin-bottom:16px">\uD83D\uDC85</div>'
-          + '<h1 style="color:#9B59B6;font-size:24px;margin-bottom:8px">ManiPro</h1>'
+          + '<h1 style="color:#9B59B6;font-size:24px;margin-bottom:8px">MyStudio</h1>'
           + '<p style="color:#c9b8d9;font-size:13px;margin-bottom:30px">Crie sua senha para acessar o sistema</p>'
           + '<div style="text-align:left;margin-bottom:14px"><label style="display:block;font-size:12px;color:#a08bb5;margin-bottom:6px;font-weight:600">E-mail</label><input id="sp-email" type="email" value="' + decodeURIComponent(setEmail) + '" readonly style="width:100%;background:#2e1d42;border:1.5px solid #3d2856;border-radius:10px;padding:12px 14px;color:#fff;font-size:14px;opacity:.7"></div>'
           + '<div style="text-align:left;margin-bottom:14px"><label style="display:block;font-size:12px;color:#a08bb5;margin-bottom:6px;font-weight:600">Nova senha</label><input id="sp-pwd" type="password" placeholder="Min 6 caracteres" style="width:100%;background:#2e1d42;border:1.5px solid #3d2856;border-radius:10px;padding:12px 14px;color:#fff;font-size:14px"></div>'

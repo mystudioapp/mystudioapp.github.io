@@ -1,5 +1,5 @@
 ﻿// v1781192785901
-// ManiPro V2 Features v3.0 - Comissao, Dashboard, Acesso Profissional
+// MyStudio V2 Features v3.0 - Comissao, Dashboard, Acesso Profissional
 (function(){
 // Funcao global chamada pelo onclick dos botoes Editar profissional
 window._doEditBarber = function(id){
